@@ -1,87 +1,109 @@
-# 功能介绍
+# Function Introduction
 
-购买有正版授权的用户可直接打开 Office 应用程序并登录微软账号即可激活 Office.
+Users who have already bought the Office authorization can activate their office by opening Office application and login their Microsoft account.
 
-如果之前安装过 Office，可能会因为之前的激活信息残留而导致奇奇怪怪的问题。遇到此类问题可以在许可证管理或者密钥管理里面找到“清除激活信息”。
 
-## 许可证管理
+If you have already installed Office, the left activation information may cause weird issues. If these problems happens, you may goto "License Management" or "Key Management" to find "clean Activation Information"
 
-如果系统上没有安装 Office，或者安装的 Office 的版本过于陈旧，则 Office Tool Plus 不会读取 Office 的许可证信息，也就不会在下拉列表中显示许可证。
 
-### 安装许可证
+## License Management
 
-你可以从下拉列表中找到你需要的许可证，然后点击安装许可证以开始操作。Office Tool Plus 为零售版证书内置了默认密钥，为批量版证书内置了 GVLK 密钥。所以你在安装了批量版证书后，不需要额外安装 GVLK 密钥即可直接使用 KMS 激活。
+If you didn't install Office, or the existing version of Office is too old, Office Tool Plus will NOT read the Office license information, and will NOT show the license in the drop-down list. 
 
-安装证书时，原有的证书不会被覆盖也不会被清除，因此证书会共存。
 
-### 安装其他许可证
+### Installing Licenses
 
-如果你需要，你可以安装其他许可证，通常情况下，Office 许可证储存在 `C:\Program Files\Microsoft Office\root\Licenses16`，你可以复制给其他计算机使用。该功能不会安装密钥，需要自行安装密钥。
+You can find the license you need in the license drop-down list, and then click "install license" to start the operation. Office Tools Plus has integrated default keys for the retail licenses, and GVLK keys for the volume licenses. As a result, you can use KMS to activate your Office just after you installed the volume license without additionally installing GVLK keys. 
 
-### 重置许可证状态
 
-此功能会将许可证重置为未激活状态，可以选择重置所有许可证，也可以选择重置特定许可证。
+When you are installig a license, the original licenses will NOT be covered or cleaned, so the licenses will coexist. 
 
-### 清除所有许可证
 
-此功能会删除系统上安装了的所有的 Office 许可证，不会清除密钥，因此许可证安装回来后和原来的状态一样。
+### Installing Other Licenses
 
-## 密钥管理
+You can install other licenses if you need. Usually, Office licenses is stored at `C:\Program Files\Microsoft Office\root\Licenses16`, you can copy it to other computers. This feature will NOT install keys. You need to install it by yourself. 
 
-### 安装密钥
 
-输入一个完整的 Office 密钥即可进行密钥的安装。如果你在安装密钥的时候提示“未找到产品 SKU”，请确保你已经安装该密钥对应的许可证。
+### Resetting License Status
 
-密钥示例如下：XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+This function will reset the license to unactivated status. You can choose to reset all licenses or a certain license. 
 
-### 卸载密钥
 
-输入密钥的最后五位即可进行密钥的卸载，你可以通过“查看激活信息”找到密钥信息。
+### Cleaning All Licenses
 
-### 查看安装 ID (IID)
+This function will delete ALL Office licenses on your computer, but it will NOT delete the keys. So there's no change if you reinstall the licenses. 
 
-此功能会显示每个许可证的安装 ID，此 ID 用于电话激活时提供。
 
-### 安装确认 ID (CID)
+## Key Management
 
-此功能允许你输入一个确认 ID，用于电话激活。
+### Installing Keys
 
-## KMS 管理
+Type in a full Office key and you can install it. If you get a "Product SKU not found" notice, please to be sure that you have already installed the license to this key. 
 
-KMS 主机可以是一个域名，也可以是一个 IP 地址，例如：kms.example.com 或者 192.168.123.1
 
-KMS 主机的默认端口是 1688，如果需要，可以手动输入指定为其他端口。
+An example of the key: XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
 
-你可以单独应用端口，也可以和主机地址一同设置。当 KMS 端口不为空时，点击保存设置将会同时保存端口设置。
 
-## 清除激活状态
+### Uninstalling Keys
 
-此功能会删除系统上所有的 Office 许可证、密钥，你的 Office 激活状态将会丢失。并且如果不安装新的许可证，Office 应用程序将会在第一次启动的时候报错。
+Type in the last five digits (or characters) and you can uninstall the key, you may use "view activation information" to find the key information. 
 
-## 激活步骤
 
-### 密钥激活（联网激活）
+### Viewing Installation ID (IID)
 
-在密钥管理中输入你的 Office 产品密钥并点击“安装密钥”，然后点击“激活”即可。
+This function will show the Installation ID of every license, this ID is used when activating Office by telephone. 
 
-如果安装密钥时显示“找不到产品 SKU”，先安装对应的许可证，然后再试。
 
-### 电话激活（脱机激活）
+### Installation Confirm ID (CID)
 
-在确保安装了正确的密钥后，在密钥管理的菜单中，点击“查看安装 ID”，最后安装得到的安装 ID (CID) 即可。
+You can type in your CID to activate by telephone with this function. 
 
-如果安装密钥时显示“找不到产品 SKU”，先安装对应的许可证，然后再试。
 
-### KMS 激活（需连接 KMS 主机）
+## KMS management
 
-在许可证管理中选择一个批量版 (Volume) 许可证并安装，接着在 KMS 管理中设置一个 KMS 主机，应用设置，然后点击“激活”即可。
+KMS host can be a hostname，or an IP address. 
+For example：kms.example.com or 192.168.123.1
 
-`KMS 激活有效期为 180 天，默认情况下，系统会每 7 天续期一次。`KMS 续期策略由 KMS 主机决定。
+The default port of the KMS host is 1688，You may choose the custom port if necessary. 
 
-## 查看激活信息
+You can only apply the port, or apply the port with the host address. If the KMS port is not empty, clicking "save settings" will also save the port setting. 
 
-此功能会显示系统上已安装密钥的所有许可证的信息，包括 SKU ID、密钥信息以及许可证状态，如果是 KMS 许可证，还将会显示 KMS 主机信息等。
 
-## 查看许可证信息
+## Cleaning Activation Status
 
-此功能会显示系统上所有许可证的信息，无论许可证是否已安装密钥。
+This function will delete all Office licenses and keys on your system. Your Office Activation status will be lost. And if you don't install new licenses, Office applications will report an error at the first time it starts. 
+
+
+## Activation Steps
+
+### Key Activation（Online Activation）
+
+Type in your Office product key in "Key management" and click "install key", and click "activate". 
+
+
+If it reports a "product SKU not found" error, install the license(s) to the key(s) and retry. 
+
+
+### Telephone Activation（Offline Activation）
+
+After you make sure you have installed the right key, click "view installation ID" in the menu of "key management", and install the CID you finally get. 
+
+
+If it reports a "product SKU not found" error, install the license(s) to the key(s) and retry. 
+
+### KMS Activation（Needs Internet Connection to KMS Host）
+
+Choose and install a volume license in "license management". Then set a KMS host in "KMS management". Click on "apply" and then click "activate". 
+
+
+`KMS Activation is valid in 180 days，for default cases，system will renew it every 7 days。`KMS renewing interval is managed by the KMS host. 
+
+## View Activation Information
+
+This function will show the information of all the keys and licenses installed on your computer, including SKU ID, key information, and license(s) status. If you use KMS licenses, it will also show the information of the KMS host. 
+
+
+## View License Information
+
+This function will show all the existing licenses on your computer, regardless of whether the license has a key installed. 
+
