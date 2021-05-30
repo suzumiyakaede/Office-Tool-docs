@@ -33,7 +33,7 @@ Office Tool Plus 基于 [Office 部署工具](https://aka.ms/ODT)和 [OSPP](http
 ::: warning 注意事项
 
 1. Office 文档转换功能可能无法兼容 64 位版本的 Office，我们将在以后尝试解决此问题。问题解决之前，请在 32 位的 Office 中使用此功能。
-2. Office Tool Plus 只提供激活管理，不内置正版密钥也不提供 KMS 服务，请使用者自行解决激活问题。
+2. Office Tool Plus 提供激活管理功能，你需要拥有正版许可才可以激活你的 Office.
 
 :::
 
