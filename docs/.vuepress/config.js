@@ -124,6 +124,54 @@ module.exports = {
 						''
 					]
 				}
+			},
+			'/zh-tw/': {
+				selectText: '選擇語言',
+				label: '繁體中文 (台灣)',
+				editLinkText: '在 GitHub 上编辑此页',
+				serviceWorker: {
+					updatePopup: {
+						message: "发现新内容可用.",
+						buttonText: "刷新"
+					}
+				},
+				nav: [
+					{ text: '入门', link: '/zh-tw/start/' },
+					{ text: '部署', link: '/zh-tw/deploy/' },
+					{ text: '激活', link: '/zh-tw/activate/' },
+					{ text: '更多', link: '/zh-tw/others/toolbox' },
+					{ text: '官方博客', link: 'https://www.coolhub.top' },
+					{
+						text: '群组', items: [
+							{ text: 'Telegram', link: 'https://otp.landian.vip/grouplink/telegram.html' }
+						]
+					}
+				],
+				sidebar: {
+					'/zh-tw/start/': [
+						'',
+						'requirement',
+						'download'
+					],
+					'/zh-tw/deploy/': [
+						'',
+						'deploy',
+						'create-iso',
+						'faq'
+					],
+					'/zh-tw/activate/': [
+						'',
+						'faq'
+					],
+					'/zh-tw/others/': [
+						'toolbox',
+						'converter',
+						''
+					],
+					'/zh-tw/': [
+						''
+					]
+				}
 			}
 		}
 	}
