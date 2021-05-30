@@ -46,7 +46,7 @@ No matter you are an individual or an organization, Office Tool Plus is always y
 
 ## Attention
 1.	Office file transfer may not be capable with x64 Office, we will try to fix this problem in future releases. Before this issue gets fixed, please only use this function on x86 Office. 
-2.	Office Tool Plus only provides activation management. You need to have a genuine authorization to activate your product. 
+2.	Office Tool Plus only provides activation management. You need to have a genuine license to activate your product. 
 
 ## About transforming retail and volume versions
 The transformation of Office from retail to volume is a saying many years ago. Office license can coexist now, which means we can have more than one license at a time. 
