@@ -1,60 +1,50 @@
-# Office Tool Plus Documentation
-
-Office Tool Plus repository: [Office Tool](https://github.com/YerongAI/Office-Tool)
-
-## Help with translation
-
-``` batch
-git clone https://github.com/YerongAI/Office-Tool-docs.git
-
-cd Office-Tool-docs
-
-yarn install
-
-# Init local website.
-yarn docs:dev
-```
-
 # Welcome to use Office Tool Plus
 
 ## Introduction
-### Office Tool Plus is a powerful and useful tool for Office Deployment. 
 
-Office Tool Plus is made based on [Office Deployment Tool](https://docs.microsoft.com/en-us/deployoffice/overview-office-deployment-tool) and [OSPP](https://docs.microsoft.com/en-us/DeployOffice/vlactivation/tools-to-manage-volume-activation-of-office). It can deploy Office easily. It has integrated the Thunder download engine so that you can download Office faster. Certainly, you can use the little functions provided by Office Tool Plus to manage and activate Office! 
+Office Tool Plus is a powerful and useful tool for Office Deployment.
 
-## The following products are supported:
-* Microsoft 365
-* Office 2016,2019,2021
-* Visio 2016,2019,2021 and Online Plan 2
-* Project 2016,2019,2021 and Online Plan 2
+Office Tool Plus is made based on [Office Deployment Tool](https://docs.microsoft.com/en-us/deployoffice/overview-office-deployment-tool) and [OSPP](https://docs.microsoft.com/en-us/DeployOffice/vlactivation/tools-to-manage-volume-activation-of-office). It can deploy Office easily. It has integrated the Thunder download engine so that you can download Office faster. Certainly, you can use the little functions provided by Office Tool Plus to manage and activate Office.
 
-No matter you are an individual or an organization, Office Tool Plus is always your best helper. 
+The following products are supported:
+
+- Microsoft 365
+- Office 2016,2019,2021
+- Visio 2016,2019,2021 and Online Plan 2
+- Project 2016,2019,2021 and Online Plan 2
+
+No matter you are an individual or an organization, Office Tool Plus is always your best helper.
 
 ## Features
-* Create Office installation configuration. The config can be exported to local, or imported from local or web. 
-* Download Office, supporting `ALL` Office channels and `ALL` Office languages. 
-* Install Office, or modify the existing Office Such as adding new products and applications, or uninstalling products and applications. 
-* Create Office ISO images, supports default installation config and silent installation config. 
-* Activate Office. Support online activation, telephone activation and KMS activation. 
-* Support Office authorization management, including license management, key management and KMS management.
-* Change Office update channel, support upgrading/downgrading Office without reinstalling Office. 
-* Remove Office. Force remove Office while it can’t be uninstalled in normal way, support Office from Office 2003 to the latest Office version. 
-* Integrated Office tools, including resetting settings, fixing model problems, and fixing activation issues. 
-* Transform Office files, based on Office COM. It’s reliable and stable. 
-* Personalize theme, you can build your special Office Tool Plus. 
-* Advanced settings allow you to use more advanced features, such as Office Insider channels. 
 
-## Attention
-1.	Office file transfer may not be capable with x64 Office, we will try to fix this problem in future releases. Before this issue gets fixed, please only use this function on x86 Office. 
-2.	Office Tool Plus only provides activation management. You need to have a genuine license to activate your product. 
+- Create Office installation configuration. The config can be exported to local, or imported from local or web.
+- Download Office, supporting `ALL` Office channels and `ALL` Office languages.
+- Install Office, or modify the existing Office Such as adding new products and applications, or uninstalling products and applications.
+- Create Office ISO images, supports default installation config and silent installation config.
+- Activate Office. Support online activation, telephone activation and KMS activation.
+- Support Office authorization management, including license management, key management and KMS management.
+- Change Office update channel, support upgrading/downgrading Office without reinstalling Office.
+- Remove Office. Force remove Office while it can’t be uninstalled in normal way, support Office from Office 2003 to the latest Office version.
+- Integrated Office tools, including resetting settings, fixing model problems, and fixing activation issues.
+- Transform Office files, based on Office COM. It’s reliable and stable.
+- Personalize theme, you can build your special Office Tool Plus.
+- Advanced settings allow you to use more advanced features, such as Office Insider channels.
 
-## About transforming retail and volume versions
-The transformation of Office from retail to volume is a saying many years ago. Office license can coexist now, which means we can have more than one license at a time. 
-You can install a volume license besides the existing activated retail license. If you activate the volume license, Office will show both the retail activation information and the volume activation information. 
+::: warning Attention
+
+1. Office file transfer may not be capable with x64 Office, we will try to fix this problem in future releases. Before this issue gets fixed, please only use this function on x86 Office.
+2. Office Tool Plus only provides activation management. You need to have a genuine license to activate your product.
+:::
+
+::: details About transforming retail and volume versions
+
+The transformation of Office from retail to volume is a saying many years ago. Office license can coexist now, which means we can have more than one license at a time.
+You can install a volume license besides the existing activated retail license. If you activate the volume license, Office will show both the retail activation information and the volume activation information.
+:::
 
 ## Components and Structure
 
-```
+``` txt
 Office Tool
 ├── Office Tool Plus.exe (main program)
 ├── ReadMe.txt (help docs)
@@ -73,4 +63,4 @@ Office Tool
     └── Thunder (files related to Thunder download acceleration )
 ```
 
-Usually, Office Tool Plus will download the needed components and keep it the latest version automatically. If some of the components are lost or cannot be downloaded automatically, we suggest you to redownload Office Tool Plus to fix this problem. 
+Usually, Office Tool Plus will download the needed components and keep it the latest version automatically. If some of the components are lost or cannot be downloaded automatically, we suggest you to redownload Office Tool Plus to fix this problem.
