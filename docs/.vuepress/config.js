@@ -4,7 +4,7 @@ module.exports = {
 	description: 'Official Office Tool Plus documentation.',
 	head: [
 		['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
-		['link', { rel: 'icon', href: './assets/img/logo.ico' }]
+		['link', { rel: 'icon', href: '/assets/img/logo.ico' }]
 	],
 	locales: {
 		'/': {
