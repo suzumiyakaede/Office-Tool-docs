@@ -18,19 +18,19 @@
 > 不确定自己是否拥有 Office 授权？个人账户请[从这里查看](https://account.microsoft.com/services/)，企业用户可以[从这里查看](https://portal.office.com/account/?ref=MeControl#subscriptions)。
 
 ::: details Office 365 产品对照表
-| 产品计划        | 产品 ID  |
+| 产品计划 | 产品 ID |
 | ------------- |:-------------:|
 | 适用于企业的 Microsoft 365 应用 | O365ProPlusRetail |
-| Office 365 企业版 E3	         | O365ProPlusRetail |
-| Office 365 企业版 E4	         | O365ProPlusRetail |
-| Office 365 企业版 E5	         | O365ProPlusRetail |
-| Office 365 中型企业版          | O365ProPlusRetail |
-| Office 365 商业版	             | O365BusinessRetail |
-| Office 365 商业高级版          | O365BusinessRetail |
-| Office 小型企业高级版           | O365SmallBusPremRetail |
-| Microsoft 365 E3	             | O365ProPlusRetail |
-| Microsoft 365 E5	             | O365ProPlusRetail |
-| Microsoft 365 商业版           | O365BusinessRetail |
+| Office 365 企业版 E3 | O365ProPlusRetail |
+| Office 365 企业版 E4 | O365ProPlusRetail |
+| Office 365 企业版 E5 | O365ProPlusRetail |
+| Office 365 中型企业版 | O365ProPlusRetail |
+| Office 365 商业版 | O365BusinessRetail |
+| Office 365 商业高级版 | O365BusinessRetail |
+| Office 小型企业高级版 | O365SmallBusPremRetail |
+| Microsoft 365 E3 | O365ProPlusRetail |
+| Microsoft 365 E5 | O365ProPlusRetail |
+| Microsoft 365 商业版 | O365BusinessRetail |
 :::
 
 ## 语言

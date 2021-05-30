@@ -8,6 +8,7 @@
 - [GitHub Releases](https://github.com/YerongAI/Office-Tool/releases)
 
 版本区别：
+
 - with runtime 版本：包含 .NET Runtime，可以在不安装 .NET 5 的情况下直接运行 Office Tool Plus.
 - with vlmcs 版本：包含 vlmcs 组件，可以增强检测 KMS 可用性的功能，但容易被杀毒软件误报。
 - 普通版本：仅包含 Office Tool Plus 以及基本组件。

@@ -7,6 +7,7 @@ Office Tool Plus 是一个强大且实用的 Office 部署工具。
 Office Tool Plus 基于 [Office 部署工具](https://aka.ms/ODT)和 [OSPP](https://docs.microsoft.com/en-us/DeployOffice/vlactivation/tools-to-manage-volume-activation-of-office) 制作，可以很方便的部署 Office，其内置迅雷引擎可帮助您更快地下载 Office，当然，你也可以使用 Office Tool Plus 内置的各种小工具或者功能快捷、方便地激活和管理 Office 哦！
 
 支持下列产品：
+
 - Microsoft 365
 - Office 2016, 2019, 2021
 - Visio 2016, 2019, 2021 & Online Plan 2
@@ -30,8 +31,10 @@ Office Tool Plus 基于 [Office 部署工具](https://aka.ms/ODT)和 [OSPP](http
 - 高级设置允许你使用更高级的功能，例如 Office 的内部通道。
 
 ::: warning 注意事项
+
 1. Office 文档转换功能可能无法兼容 64 位版本的 Office，我们将在以后尝试解决此问题。问题解决之前，请在 32 位的 Office 中使用此功能。
 2. Office Tool Plus 只提供激活管理，不内置正版密钥也不提供 KMS 服务，请使用者自行解决激活问题。
+
 :::
 
 ::: details 关于零售、批量互转
@@ -42,7 +45,7 @@ Office 从零售版转换为批量版的说法是很久以前的了。现在的 
 
 ## 组件与结构
 
-```
+``` txt
 Office Tool
 ├── Office Tool Plus.exe (主程序)
 ├── ReadMe.txt (说明文件)

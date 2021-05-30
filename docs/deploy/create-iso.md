@@ -41,6 +41,7 @@
 :::
 
 ::: details 创建自动安装的 Office ISO
+
 ``` txt
 注意，该模式下的 Office Tool Plus 无法使用以下功能：
 - 安装完成后创建桌面快捷方式。
@@ -68,6 +69,7 @@ start "" "Office Tool Plus.exe" /loadConfig "%~dp0ConfigForISO.xml" /SourcePath 
 ``` batch
 start "" "Office Tool Plus.exe"
 ```
+
 :::
 
 创建完成后，你应该测试一下 Office ISO 是否和你预期的一样工作。

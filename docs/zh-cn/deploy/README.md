@@ -21,16 +21,16 @@
 | 产品计划        | 产品 ID  |
 | ------------- |:-------------:|
 | 适用于企业的 Microsoft 365 应用 | O365ProPlusRetail |
-| Office 365 企业版 E3	         | O365ProPlusRetail |
-| Office 365 企业版 E4	         | O365ProPlusRetail |
-| Office 365 企业版 E5	         | O365ProPlusRetail |
-| Office 365 中型企业版          | O365ProPlusRetail |
-| Office 365 商业版	             | O365BusinessRetail |
-| Office 365 商业高级版          | O365BusinessRetail |
-| Office 小型企业高级版           | O365SmallBusPremRetail |
-| Microsoft 365 E3	             | O365ProPlusRetail |
-| Microsoft 365 E5	             | O365ProPlusRetail |
-| Microsoft 365 商业版           | O365BusinessRetail |
+| Office 365 企业版 E3 | O365ProPlusRetail |
+| Office 365 企业版 E4 | O365ProPlusRetail |
+| Office 365 企业版 E5 | O365ProPlusRetail |
+| Office 365 中型企业版 | O365ProPlusRetail |
+| Office 365 商业版 | O365BusinessRetail |
+| Office 365 商业高级版 | O365BusinessRetail |
+| Office 小型企业高级版 | O365SmallBusPremRetail |
+| Microsoft 365 E3 | O365ProPlusRetail |
+| Microsoft 365 E5 | O365ProPlusRetail |
+| Microsoft 365 商业版 | O365BusinessRetail |
 :::
 
 ## 语言
