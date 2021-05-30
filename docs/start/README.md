@@ -38,8 +38,8 @@ No matter you are an individual or an organization, Office Tool Plus is always y
 :::
 
 ::: details About transforming retail and volume versions
+Office license can coexist now, which means we can have more than one license at a time.
 
-The transformation of Office from retail to volume is a saying many years ago. Office license can coexist now, which means we can have more than one license at a time.
 You can install a volume license besides the existing activated retail license. If you activate the volume license, Office will show both the retail activation information and the volume activation information.
 :::
 
