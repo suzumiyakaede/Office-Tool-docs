@@ -1,5 +1,5 @@
 module.exports = {
-	base: '/help/',
+	base: '/',
 	title: 'Office Tool Plus Docs',
 	description: 'Official Office Tool Plus documentation.',
 	head: [
