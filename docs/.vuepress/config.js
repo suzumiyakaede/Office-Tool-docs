@@ -19,7 +19,9 @@ module.exports = {
 		}
 	},
 	themeConfig: {
-		repo: 'YerongAI/Office-Tool-docs',
+		repo: 'YerongAI/Office-Tool',
+		docsDir: 'docs',
+		docsBranch: 'main',
 		editLinks: true,
 		smoothScroll: true,
 		locales: {
