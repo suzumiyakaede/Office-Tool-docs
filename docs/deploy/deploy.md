@@ -1,74 +1,76 @@
-# 部署示例
+# Deployment Examples
 
-部署 Office 时，安装和卸载可以同时进行，因此你可以将多个步骤结合在一起，无需分开执行。
+When deploying Office, installation and uninstallation can occur simultaneously, so you can combine multiple steps without having to perform them separately.
 
-::: tip 提示
-**以下示例仅供学习或参考，实际部署时，请按照自己的需求或者实际情况进行配置。**
+::: tip Tip
+**The following examples are for learning only. For actual deployment, please configure according to your needs or actual situation.**
 :::
 
-## 初次安装 Office
+## Fresh install
 
-### 安装 Microsoft 365 家庭版
+### Install Microsoft 365 Family
 
-- 添加产品，选择 Microsoft 365 家庭版
-- 添加语言，选择简体中文
+- Add product and select Microsoft 365 (Family & Personal).
+- Add language and select English.
 
-开始部署。
+Start deploy.
 
-### 安装 Office 2019 批量版（2021 同理）
+### Install Office 2019 Volume (2021 is the same)
 
-- 添加产品，选择 Office 2019 专业增强版 - 批量版
-- 添加语言，选择简体中文
-- 更改通道，选择 Office 2019 企业长期版
+- Add product and select Office Pro Plus 2019 - Volume.
+- Add language and select English.
+- Change channel to Office 2019 Perpetual Enterprise.
 
-开始部署。
+Start deploy.
 
-### 安装 Office 2019 批量版（2021 同理，附带 Visio）
+### Install Office 2019 Volume with Visio (2021 is the same)
 
-- 添加产品，选择 Office 2019 专业增强版 - 批量版
-- 添加产品，选择 Visio 2019 专业版 - 批量版
-- 添加语言，选择简体中文
-- 更改通道，选择 Office 2019 企业长期版
+- Add product and select Office Pro Plus 2019 - Volume.
+- Add product and select Visio Pro 2019 - Volume.
+- Add language and select English.
+- Change channel to Office 2019 Perpetual Enterprise.
 
-开始部署。
+Start deploy.
 
-## 新增产品
+## Adding products to an existing Office installation
 
-### 新增 Visio 到现有安装中（Project 同理）
+### Adding Visio (Project is the same)
 
-- 添加产品，选择 Visio 2019 专业版 - 批量版
+- Add product and select Visio Pro 2019 - Volume.
 
-根据自己的授权，你还可以选择零售版，使用账户或者密钥激活。
+You can also choose a retail version and activate it with an account or a key.
 
-开始部署。
+Start deploy.
 
-## 更改产品
+## Modifying products
 
-### 从 Microsoft 365 家庭版迁移到 Microsoft 365 企业版
+### Migrate from Microsoft 365 (Family & Personal) to Microsoft 365 Apps for Enterprise
 
-- 点击 Microsoft 365 家庭版的卸载，将其标记为即将卸载。
-- 新增产品，选择 Microsoft 365 企业版
+- Mark Microsoft 365 (Family & Personal) as uninstall.
+- Add product and select Microsoft 365 Apps for Enterprise.
 
-开始部署。
+Start deploy.
 
-## 语言
+## Languages
 
-语言的处理与产品相同，都是这么干。
+Same as adding/modifying product.
 
-## 更改应用程序
+## Modifying applications
 
-若要新增一个应用程序，请将其选中；若要卸载一个应用程序，请将其取消选中。
+Check an application that you want to install. Uncheck an application that you want to uninstall.
 
-其他不需要更改的应用程序保持原来的设置即可。
+Keep others that you don't want to change.
 
-确认完毕后，点击开始部署即可。
+Start deploy.
 
-如果应用程序中没有你想要的程序，比如 Access，那么新增一个产品，选择 Access 即可。
+If the applications does not have the items you want, such as Access, add a new product and select Access.
 
-## 迁移体系结构
+## Migration architecture
 
-Office 部署工具支持将 Office 从 32 位更改为 64 位（反之亦可），自动化操作，无需过多的人工干预。
+Office Deployment Tool supports changing Office from 32-bit to 64-bit (or 64-bit to 32-bit) automatically.
 
-首先将体系结构更改为自己想要的，如果你想迁移到 64 位的 Office。那么现在就选择 64 位。
+First change the architecture to the one you want. If you want to migrate to 64-bit Office, then select 64-bit now.
 
-之后将 *高级设置 - 升级选项 - 迁移体系结构* 勾选，然后开始部署即可。Office 部署工具会首先将你的 Office 卸载，然后安装 64 位的 Office.
+Chech *Advanced settings - upgrade settings - migrate architecture*, then start deploy.
+
+Office Deployment Tool will first uninstall your Office and then install the 64-bit Office.

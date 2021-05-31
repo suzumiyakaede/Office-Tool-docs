@@ -4,7 +4,21 @@ module.exports = {
 	description: 'Official Office Tool Plus documentation.',
 	head: [
 		['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
-		['link', { rel: 'icon', href: '/assets/img/logo.ico' }]
+		['link', { rel: 'icon', href: '/assets/img/logo.ico' }],
+		[
+			'script',
+			{
+				async: true,
+				src: 'https://www.googletagmanager.com/gtag/js?id=G-K4SGXHF07B',
+			}
+		],
+		[
+			'script',
+			{},
+			[
+				"window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-K4SGXHF07B');",
+			]
+		]
 	],
 	locales: {
 		'/': {

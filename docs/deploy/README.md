@@ -1,4 +1,4 @@
-# 配置选项
+# Configuration options
 
 使用 Office Tool Plus 部署 Office 时，做以下两件事即可：
 
@@ -7,7 +7,7 @@
 
 这是部署 Office 最基本的要求，然后就可以开始部署 Office 了。
 
-## 产品
+## Product
 
 购买了 Microsoft 365 的用户，添加产品的时候选择 Microsoft 365 产品即可，具体视你所拥有的授权而选择家庭版、个人版或企业版。
 
@@ -33,7 +33,7 @@
 | Microsoft 365 商业版 | O365BusinessRetail |
 :::
 
-## 语言
+## Language
 
 点击添加语言时，Office Tool Plus 会默认匹配当前系统的语言，如果匹配不正确或者需要选择其他语言，请手动更改。
 
@@ -52,7 +52,7 @@
 | 部分但不包含校对工具　| 语言包包含部分 Office 应用程序的显示语言，但不包含校对工具 |
 | 校对工具　　　　　　　| 语言包仅包含拼写检查器 |
 
-## 应用程序
+## Application
 
 应用程序会随你选择的产品不同而显示不同的内容。
 
@@ -64,7 +64,7 @@ Bing 是一个用于 Chrome 和 Edge 的扩展，若要获取更多信息，请�
 
 有关产品和应用程序的信息，可以查看 [Office Products Information](https://www.coolhub.top/tech-articles/products.html).
 
-## 通道
+## Channel
 
 大多数情况下，只需要从当前通道或者半年度企业通道选择即可，下表列出了通道之间的区别：
 
@@ -84,7 +84,7 @@ Bing 是一个用于 Chrome 和 Edge 的扩展，若要获取更多信息，请�
 
 如果需要了解详细信息，请参阅 [Microsoft 365 应用版的更新通道概述](https://docs.microsoft.com/zh-cn/deployoffice/overview-update-channels)。
 
-## 体系结构
+## Architecture
 
 **通常情况下，我们建议你安装 32 位的 Office**，但如果存在下列情况，则推荐安装 64 位的 Office:
 
@@ -96,22 +96,22 @@ Bing 是一个用于 Chrome 和 Edge 的扩展，若要获取更多信息，请�
 
 如果需要了解详细信息，请参阅[选择 64 位或 32 位版本的 Office](https://support.microsoft.com/zh-cn/office/%E9%80%89%E6%8B%A9-64-%E4%BD%8D%E6%88%96-32-%E4%BD%8D%E7%89%88%E6%9C%AC%E7%9A%84-office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261)
 
-## 部署模式
+## Deployment mode
 
-| 模式          | 说明 |
-| ------------- | ----- |
-| 编辑配置      | 仅用于生成/修改 XML 配置文件，不能进行部署   |
-| 下载          | 仅下载 Office 安装包，不会也不能启动安装程序 |
-| 安装          | 可以在计算机上进行安装、卸载、修改 Office 等操作 |
-| 创建 ISO 文件 | 将 Office 安装包与 Office Tool Plus 一起打包，如果有安装配置，则连同配置一起写入 Office ISO 中 |
+| Mode            | Instruction |
+| --------------- | ----------- |
+| Edit config     | 仅用于生成/修改 XML 配置文件，不能进行部署   |
+| Download        | 仅下载 Office 安装包，不会也不能启动安装程序 |
+| Install         | 可以在计算机上进行安装、卸载、修改 Office 等操作 |
+| Create ISO file | 将 Office 安装包与 Office Tool Plus 一起打包，如果有安装配置，则连同配置一起写入 Office ISO 中 |
 
 Office 安装包包含 Office、Visio 和 Project，由微软提供，无法精简。
 
 若要创建 ISO 文件，必须先下载 Office 安装包。
 
-## 安装模块
+## Installation module
 
-### Office 部署工具
+### Office Deployment Tool
 
 Office 部署工具是微软官方工具，提供了部署 Office 的完整支持，适合所有人使用。
 
@@ -135,7 +135,7 @@ Office 部署工具是微软官方工具，提供了部署 Office 的完整支�
 
 我们建议优先使用 Office 部署工具，如果 Office 部署工具出现了无法修复的问题，或者有特殊需求，才应该选择 Office Tool Plus 作为安装模块。
 
-## 下载设置
+## Download settings
 
 下载设置仅在 *下载* 模式，或者在勾选 *下载后安装* 的情况下生效。
 
@@ -151,13 +151,13 @@ Office 部署工具是微软官方工具，提供了部署 Office 的完整支�
 
 当 Office Tool Plus 找不到迅雷组件时，将会回退到 Office Tool Plus 作为下载引擎。
 
-### UA 设置
+### UA
 
 默认情况下，Office Tool Plus 会自动检测你的 Windows 系统版本，然后为你下载合适的 Office 版本。
 
 如果你需要为别的 Windows 版本下载 Office 安装包，你可以更改 UA 为特定的 Windows 版本。
 
-## 安装文件管理
+## Installation files manage
 
 默认情况下，当你从 Office Tool Plus 下载 Office 安装包后，Office Tool Plus 会自动识别 Office 安装包信息并显示在此处。
 
@@ -171,7 +171,7 @@ Office ISO 镜像应先挂载或者解压后，再选择其中内含的 CAB 文�
 
 点击重置可以清除安装包信息，重置源路径属性为默认值，相当于不再使用本地安装包进行部署。
 
-## 版本
+## Office version
 
 此设置位于 *高级设置 - 安装设置* 中。
 
@@ -181,7 +181,7 @@ Office ISO 镜像应先挂载或者解压后，再选择其中内含的 CAB 文�
 
 如果你下载了 Office 安装包，则此处会显示相应通道下所有 Office 安装包的版本。
 
-## 源路径
+## Source path
 
 此设置位于 *高级设置 - 安装设置* 中。
 
@@ -193,7 +193,7 @@ Office ISO 镜像应先挂载或者解压后，再选择其中内含的 CAB 文�
 
 **在下载模式，源路径属性用于指定应将 Office 安装包储存在什么位置。**
 
-## 应用程序首选项
+## Application preferences
 
 `应用程序首选项由微软提供数据，其文本均为机器翻译，可能存在某些语法错误，请以英文版本的为准。`
 
@@ -203,6 +203,6 @@ Office ISO 镜像应先挂载或者解压后，再选择其中内含的 CAB 文�
 
 您所定义的应用程序首选项将应用于设备的所有现有用户以及未来添加到该设备的任何新用户。如果在 Office 应用程序运行时应用首选项，则新的设置将在 Office 下次运行时生效。
 
-## 其他选项
+## Other options
 
 其他选项介绍以及用法在[微软官方文档](https://docs.microsoft.com/zh-cn/deployoffice/office-deployment-tool-configuration-options)中有详细介绍，使用方法相同，在这里不再重复叙述。
