@@ -11,9 +11,9 @@ Check it will save application settings, such as language, theme and background 
 By default, Office Tool Plus displays the native name of languages.
 
 - Normal: Display in default format.
-- Native name：Display the native name of languages.
-- English name：Display the languages name in English.
-- Localized name：Display according to the system language setting. If your system language is English, all of the languages will diaplay in English.
+- Native name: Display the native name of languages.
+- English name: Display the languages name in English.
+- Localized name: Display according to the system language setting. If your system language is English, all of the languages will diaplay in English.
 
 Language names are data provided by Windows and may be displayed differently by different versions of Windows.
 
@@ -60,4 +60,4 @@ The commands are case-insensitive and are executed in the order they are entered
 
 **/osppact** Activates installed Office product keys.
 
-Other OSPP commands are used in a similar way, just add the "ospp" in front of each command, the OSPP help documentation is available from[Microsoft docs](https://docs.microsoft.com/en-us/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office).
+Other OSPP commands are used in a similar way, just add the "ospp" in front of each command, the OSPP help documentation is available from [Microsoft docs](https://docs.microsoft.com/en-us/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office).

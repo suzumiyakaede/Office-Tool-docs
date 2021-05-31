@@ -1,25 +1,25 @@
-# 工具箱
+# Toolbox
 
-工具箱中内含很多小工具帮助你解决 Office 问题，但我们无法保证这些工具是 100% 有效的。某些严重的情况下，你可能需要重装系统才能解决问题。
+Toolbox can help you solve Office problems, but we cannot guarantee that these tools are 100% effective. In some severe cases, you may need to reinstall Windows to fix problems.
 
-## 修改 Office 更新通道
+## Change Office update channel
 
-此功能可以更改 Office 更新通道，从而实现不重装进行 Office 的升级/降级。
+You can change the Office update channel and upgrade/downgrade without Office installation.
 
-::: warning 注意
-Office 企业版长期通道被锁定，一般情况下无法更改，也无法从别的通道更改到此通道。
+::: warning Warning
+You can't change Office update channel for Office 2019/2021 Volume products.
 :::
 
-## 检查 KMS 可用性
+## Check KMS status
 
-默认情况下，Office Tool Plus 使用 TCP 连接测试 KMS 主机是否可以连通，不能检测 KMS 主机是否正常工作。
+By default, Office Tool Plus uses a TCP connection to test the KMS host, it cannot detect that the KMS host is working properly or not.
 
-如果 Office Tool Plus 检测到 vlmcs 组件，则会使用 vlmcs 进行更详细的检测，包括延迟以及激活结果。
+If Office Tool Plus detects a vlmcs component, it uses vlmcs for testing, including latency and activation results.
 
-vlmcs 组件包含在 with vlmcs 版本的 Office Tool Plus 中。
+The vlmcs component is included in the `with vlmcs` version of Office Tool Plus.
 
-## 移除 Office
+## Remove Office
 
-此功能支持移除 Office 2003 - Office 最新版本，简而言之，就是所有版本的 Office.
+Support for removing all versions of Office, including 2003 - 2021 and 365.
 
-如果过程中出现了某些文件无法访问的问题，你可以多试几次，也可以手动找到文件删除。
+If something went wrong, you can try again later, or delete the files manually.
