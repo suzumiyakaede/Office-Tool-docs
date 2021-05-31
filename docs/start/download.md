@@ -1,24 +1,24 @@
-# 下载并开始使用
+# Download
 
-你可以从以下任意一个地方下载 Office Tool Plus:
+Download Office Tool Plus from:
 
-- [Office Tool Plus 官方网站](http://otp.landian.vip/)
-- [Office Tool Plus 下载站](https://otp.landian.vip/redirect/download.html)
+- [Office Tool Plus official website](http://otp.landian.vip/)
+- [Office Tool Plus mirror download](https://otp.landian.vip/redirect/download.html)
 - [OneDrive for Business](https://coolhub-my.sharepoint.com/:f:/g/personal/yerong_coolhub_onmicrosoft_com/Ev9IUbXAw01JgwrAgsIFB8YBzJebdZZpmsR9hZFAZZVDgg?e=AkSdZU)
 - [GitHub Releases](https://github.com/YerongAI/Office-Tool/releases)
 
-版本区别：
+Differences between the versions:
 
-- with runtime 版本：包含 .NET Runtime，可以在不安装 .NET 5 的情况下直接运行 Office Tool Plus.
-- with vlmcs 版本：包含 vlmcs 组件，可以增强检测 KMS 可用性的功能，但容易被杀毒软件误报。
-- 普通版本：仅包含 Office Tool Plus 以及基本组件。
+- with runtime: Includes .NET Runtime library, you can run Office Tool Plus without .NET Runtime installation.
+- with vlmcs: Includes vlmcs component, it may be detected as a virus.
+- Normal: Only Office Tool Plus and base component.
 
-> 推荐下载 with runtime 版本，方便使用。
+> We recommand you to download Office Tool Plus with runtime.
 
-## 解压
+## Unpack
 
-下载完成后，请将 Office Tool Plus 解压到一个合适的位置，例如桌面。**请勿在压缩包内直接双击运行 Office Tool Plus**.
+Extract Office Tool Plus to a location, such as desktop. **Do NOT run Office Tool Plus without unpacking**.
 
-## 运行
+## Run
 
-使用 with runtime 版本时，你可以通过双击 RunMe.bat 文件来运行 Office Tool Plus，如果你使用的是不自带框架的版本，或者需要双击 Office Tool Plus.exe 直接打开，请确保你已经安装了 [.NET 5 Desktop Runtime x86](https://dotnet.microsoft.com/download/dotnet/current/runtime)，**请注意，软件需要的是 x86 的运行库，与你的系统架构版本无关系。**
+You can run Office Tool Plus by click `RunMe.bat`. If you doesn't download Office Tool Plus with runtime, or you want to run Office Tool Plus directly, please install [.NET 5 Desktop Runtime x86](https://dotnet.microsoft.com/download/dotnet/current/runtime). **You need to install the 32-bit of Desktop runtime even on a 64-bit system.**

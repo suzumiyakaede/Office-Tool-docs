@@ -46,7 +46,7 @@ The commands are case-insensitive and are executed in the order they are entered
 
 **/clImage** Clear current background image.
 
-**/getKey product-ID** Get a normal product key for a license, if the product is volume, return GVLK instead.
+**/getKey product-ID** Get a normal product key for a license, if the product is volume product, return GVLK instead.
 
 **/osppILByID product-ID** Install licenses and normal key with a user-provided product ID.
 
