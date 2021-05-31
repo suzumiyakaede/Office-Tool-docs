@@ -1,17 +1,17 @@
-# 文档转换
+# Document converter
 
-文档转换使用 Office COM 完成，需要系统上已安装最新版的 Office，否则可能会无法正常使用。
+Document conversion is using Office COM and requires the latest version of Office to be installed on your system, otherwise it may not work properly.
 
-工作期间，Office 应用程序不会显示界面，只会在后台工作。
+The Office applications will work in the background during conversion.
 
-某些 Office 设置或策略可能会影响 Office 文档转换，如有需要，可以去 Office 应用程序内修改相关设置。
+Some Office settings or policies may affect Office document conversions, you can change the Office settings if necessary.
 
-::: warning 注意
-Office Tool Plus 的文档转换基于 32 位的 Office，在 64 位的 Office 上可能无法正常使用。
+::: warning Warning
+Document converter are based on 32-bit Office and may not work properly on 64-bit Office.
 :::
 
-## 移除文件
+## Remove file(s) from list
 
-如果你不想对某个已选择的文件进行转换，在列表中单击选中此文件，然后右键点击“删除”即可将此文件从列表中移除。
+Click an item in the list and right-click "Delete" to remove it from the list.
 
-如果你想清空列表，使用 Ctrl + A 或者右键“全选”，然后再右键“删除”即可。
+Use Ctrl + A or right-click "Select All" and then right-click "Delete" to remove all items from list.
