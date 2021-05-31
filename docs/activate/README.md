@@ -4,6 +4,25 @@ Users who have already bought Office from Microsoft can activate by login Micros
 
 If you have activated Office before, you can clear the Office activation to avoid problems. Go to "License management" or "Key management" to find "Clear activation".
 
+## 许可证说明
+
+### 零售（Retail）许可证
+
+零售许可证只能使用密钥激活，对于 Microsoft 365（Office 365）系列产品，只能通过登录拥有正版许可证微软账户激活。
+
+目前大多数的零售许可都与微软账户绑定，因此零售版产品激活通常不需要借助 Office Tool Plus 即可完成。
+
+### 批量（Volume）许可证
+
+批量许可证可以使用密钥激活，也能使用 KMS 激活。
+
+- MAK 指的是批量激活密钥（Multiple Activation Key），该密钥有激活次数上限，可以多次使用并激活 Office.
+- KMS 激活指的是使用密钥管理服务（Key Management Service）进行激活，KMS 激活需要使用 GVLK，并设置 KMS 主机。
+
+在激活信息不丢失的情况下，使用 MAK 激活为永久激活。
+
+KMS 续期策略由 KMS 主机决定。通常情况下，一次激活的有效期是 180 天，每隔 7 天续期一次。
+
 ## License mnagement
 
 If you didn't install Office, or the existing version of Office is too old, Office Tool Plus will NOT read the Office license information, and will NOT show the license in the drop-down list.
@@ -78,8 +97,6 @@ If it reports a "product SKU not found" error,  install the correct license firs
 ### KMS activation (Internet connection required)
 
 Choose and install a volume license in "license management". Then set a KMS host in "KMS management". Click on "set KMS host" and then click "activate".
-
-`KMS Activation is valid in 180 days，for default cases，system will renew it every 7 days。`KMS renewing interval is managed by the KMS host.
 
 ## Display activation information
 
