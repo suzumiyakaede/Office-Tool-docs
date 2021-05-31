@@ -8,12 +8,12 @@ Office Tool Plus is made based on [Office Deployment Tool](https://docs.microsof
 
 The following products are supported:
 
-- Microsoft 365
-- Office 2016,2019,2021
-- Visio 2016,2019,2021 and Online Plan 2
-- Project 2016,2019,2021 and Online Plan 2
+- Microsoft 365.
+- Office 2016, 2019, 2021.
+- Visio 2016, 2019, 2021 and Online Plan 2.
+- Project 2016, 2019, 2021 and Online Plan 2.
 
-No matter you are an individual or an organization, Office Tool Plus is always your best helper.
+No matter what, Office Tool Plus is always your best helper.
 
 ## Features
 
@@ -64,4 +64,6 @@ Office Tool
     └── Thunder (files related to Thunder download acceleration)
 ```
 
-Usually, Office Tool Plus will download the needed components and keep it the latest version automatically. If some of the components are lost or cannot be downloaded automatically, we suggest you to redownload Office Tool Plus to fix this problem.
+Usually, Office Tool Plus will download the needed components and keep it the latest version automatically.
+
+If some of the components are lost or cannot be downloaded automatically, we suggest you to redownload Office Tool Plus to fix this problem.
