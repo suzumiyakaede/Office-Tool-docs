@@ -1,9 +1,9 @@
 # FAQ
 
-## 错误代码
+## Error codes
 
 Placeholder.
 
-## 解决方案
+## Solutions
 
 Placeholder.

@@ -1,9 +1,9 @@
 # FAQ
 
-## 下载问题
+## Download
 
 Placeholder.
 
-## 安装问题
+## Install
 
 Placeholder.

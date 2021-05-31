@@ -41,7 +41,7 @@ module.exports = {
 					{ text: 'Start', link: '/start/' },
 					{ text: 'Deploy', link: '/deploy/' },
 					{ text: 'Activate', link: '/activate/' },
-					{ text: 'More', link: '/others/' },
+					{ text: 'More', link: '/others/toolbox' },
 					{ text: 'Blog (Chinese)', link: 'https://www.coolhub.top' },
 					{
 						text: 'Group', items: [
