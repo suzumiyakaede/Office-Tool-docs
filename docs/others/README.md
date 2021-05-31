@@ -1,63 +1,63 @@
-# 更多信息
+# More
 
-## 应用程序设置
+## Application Settings
 
-如果需要保存 Office Tool Plus 的设置，例如语言、主题或者背景图设置，请勾选“保存设置到本地”选项。
+### Save settings to local
 
-高级设置里面可以更改语言显示格式以及开启高级功能。
+Check it will save application settings, such as language, theme and background image settings.
 
-### 语言显示格式
+### Language display name
 
-默认情况下，Office Tool Plus 显示语言为本地格式，例如英语显示为 English (United States).
+By default, Office Tool Plus displays the native name of languages.
 
-- 默认：不进行任何更改，按照默认的设置显示。
-- 本地名称：显示语言的本地名称，例如英语是 English，德语是：Deutsch
-- 英文名称：显示语言的英文名称，例如中文是 Chinese，德语是：German
-- 本地化名称：按照系统语言设置显示，例如你的系统语言是中文，那么所有的语言都显示为中文。
+- Normal: Display in default format.
+- Native name：Display the native name of languages.
+- English name：Display the languages name in English.
+- Localized name：Display according to the system language setting. If your system language is English, all of the languages will diaplay in English.
 
-本地名称、英文名称以及本地化名称由 Windows 提供数据，不同版本的 Windows 显示结果可能不同。
+Language names are data provided by Windows and may be displayed differently by different versions of Windows.
 
-::: tip 提示
-要更改为默认值，你需要重新启动应用程序才能生效。
+::: tip Tip
+To change the language display name to normal, you need to restart application to take effect.
 :::
 
-### 高级功能
+### Advanced features
 
-启用此选项后，Office Tool Plus 将会加载 Office 内部通道。
+Check it if you want to use Office internal channels.
 
-## Office Tool Plus 快捷键
+## Office Tool Plus shortcut keys
 
-- <kbd>Esc</kbd>: 返回
-- <kbd>F1</kbd>: 显示帮助
-- <kbd>F5</kbd>: 刷新信息/重置配置（仅部署页面）
-- <kbd>Ctrl + 1</kbd>: 切换到部署页面
-- <kbd>Ctrl + 2</kbd>: 切换到激活页面
-- <kbd>Ctrl + 3</kbd>: 切换到工具箱页面
-- <kbd>Ctrl + 4</kbd>: 切换到文档转换页面
-- <kbd>Ctrl + T</kbd>: 显示设置页面
-- <kbd>Ctrl + B</kbd>: 显示关于页面
-- <kbd>Ctrl + Shift + D</kbd>: 忽略警告或错误，强制进行部署（仅部署页面）
+- <kbd>Esc</kbd>: Back.
+- <kbd>F1</kbd>: Help.
+- <kbd>F5</kbd>: Refresh Office information and reset deploy settings (on deploy page).
+- <kbd>Ctrl + 1</kbd>: Switch to deploy page.
+- <kbd>Ctrl + 2</kbd>: Switch to activate page.
+- <kbd>Ctrl + 3</kbd>: Swtich to toolbox page.
+- <kbd>Ctrl + 4</kbd>: Switch to documents converter.
+- <kbd>Ctrl + T</kbd>: Display setting page.
+- <kbd>Ctrl + B</kbd>: Display about page.
+- <kbd>Ctrl + Shift + D</kbd>: Ignore errors or warnings, force start deploy (on deploy page).
 
-## Office Tool Plus 应用内命令
+## Office Tool Plus In-application commands
 
-命令不区分大小写，按照输入顺序执行。如果路径中含有空格，请使用 "" (英文双引号) 将路径包括起来。
+The commands are case-insensitive and are executed in the order they are entered. If the path contains spaces, use "" (double quotes) to include the path.
 
-**/setImage path** 手动指定背景图，Path: 背景图路径（支持 JPG，PNG，支持本地路径以及 HTTP 路径）
+**/setImage path** Set the background image, support local, network and HTTP path.
 
-**/clImage** 清除当前背景图
+**/clImage** Clear current background image.
 
-**/getKey product-ID** 获取产品密钥，若是批量产品，返回 GVLK，其他产品则返回默认密钥。ProductID: 产品 ID，例如：ProPlus2019Volume
+**/getKey product-ID** Get a normal product key for a license, if the product is volume, return GVLK instead.
 
-**/osppILByID product-ID** 安装指定产品的 Office 许可证， ProductID: 产品 ID。例如：MondoVolume
+**/osppILByID product-ID** Install licenses and normal key with a user-provided product ID.
 
-**/osppinpkey:value** 安装指定的 Office 密钥，例如：/osppinpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+**/osppinpkey:value** Install a product key, example: /osppinpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
 
-**/osppunpkey:value** 卸载指定的 Office 密钥，例如：/osppunpkey:XXXXX
+**/osppunpkey:value** Uninstall an installed product key with the last five digits of the product key to uninstall. Example: /osppunpkey:XXXXX
 
-**/osppsethst:value** 设置 KMS 主机地址，例如：/osppsethst:kms.example.com
+**/osppsethst:value** Sets a KMS host name. Example: /osppsethst:kms.example.com
 
-**/osppsetprt:value** 设置 KMS 主机端口，默认 1688，例如：/osppsetprt:1688
+**/osppsetprt:value** Sets a KMS port, the default port number is 1688. Example: /osppsetprt:1688
 
-**/osppact** 激活 Office 客户端产品
+**/osppact** Activates installed Office product keys.
 
-其它 OSPP 参数使用方法类似，在每个命令前添加 ospp 字眼即可，OSPP 帮助文档可从[微软官方文档](https://docs.microsoft.com/zh-cn/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)取得。
+Other OSPP commands are used in a similar way, just add the "ospp" in front of each command, the OSPP help documentation is available from[Microsoft docs](https://docs.microsoft.com/en-us/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office).
