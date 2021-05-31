@@ -7,7 +7,7 @@
 
 这是部署 Office 最基本的要求，然后就可以开始部署 Office 了。
 
-## Product
+## Products
 
 购买了 Microsoft 365 的用户，添加产品的时候选择 Microsoft 365 产品即可，具体视你所拥有的授权而选择家庭版、个人版或企业版。
 
@@ -33,7 +33,7 @@
 | Microsoft 365 商业版 | O365BusinessRetail |
 :::
 
-## Language
+## Languages
 
 点击添加语言时，Office Tool Plus 会默认匹配当前系统的语言，如果匹配不正确或者需要选择其他语言，请手动更改。
 
@@ -52,7 +52,7 @@
 | 部分但不包含校对工具　| 语言包包含部分 Office 应用程序的显示语言，但不包含校对工具 |
 | 校对工具　　　　　　　| 语言包仅包含拼写检查器 |
 
-## Application
+## Applications
 
 应用程序会随你选择的产品不同而显示不同的内容。
 
@@ -64,7 +64,7 @@ Bing 是一个用于 Chrome 和 Edge 的扩展，若要获取更多信息，请�
 
 有关产品和应用程序的信息，可以查看 [Office Products Information](https://www.coolhub.top/tech-articles/products.html).
 
-## Channel
+## Channels
 
 大多数情况下，只需要从当前通道或者半年度企业通道选择即可，下表列出了通道之间的区别：
 
@@ -113,7 +113,7 @@ Office 安装包包含 Office、Visio 和 Project，由微软提供，无法精�
 
 ### Office Deployment Tool
 
-Office 部署工具是微软官方工具，提供了部署 Office 的完整支持，适合所有人使用。
+The Office Deployment Tool is an official Microsoft tool for deploying Office. 提供了部署 Office 的完整支持，适合所有人使用。
 
 ### Office Tool Plus
 
@@ -121,17 +121,17 @@ Office 部署工具是微软官方工具，提供了部署 Office 的完整支�
 
 下表列出了两者之间的区别：
 
-| 功能 | Office 部署工具 | Office Tool Plus |
-| :-- | --- | --- |
-| MECM 支持                    | √ | × |
-| 更新截止时间                 | √ | × |
-| 迁移体系结构                 | √ | × |
-| 强制更新 Office              | √ | × |
-| 移除现有的 MSI 版本的 Office | √ | × |
-| 安装与 MSI 版本相同的语言    | √ | × |
-| Office 应用程序首选项        | √ | × |
-| 使用 Office 内部通道         | × | √ |
-| 安装特殊产品                 | × | √ |
+| Funtions | Office Deployment Tool | Office Tool Plus |
+| :------- | ---------------------- | ---------------- |
+| Support for MECM.                 | √ | × |
+| Update deadline.                  | √ | × |
+| Migrate architecture.             | √ | × |
+| Force upgrade Office.             | √ | × |
+| Remove existing MSI versions of Office. | √ | × |
+| Install the same language as the previous MSI version. | √ | × |
+| Office applications preferences   | √ | × |
+| Use Office internal channels      | × | √ |
+| Install special products          | × | √ |
 
 我们建议优先使用 Office 部署工具，如果 Office 部署工具出现了无法修复的问题，或者有特殊需求，才应该选择 Office Tool Plus 作为安装模块。
 
@@ -141,11 +141,11 @@ Office 部署工具是微软官方工具，提供了部署 Office 的完整支�
 
 下载引擎的区别：
 
-| 引擎 | 说明 |
-| --- | --- |
-| 迅雷 | 支持设置代理、设置限速、断点续传，支持显示下载信息，支持暂停、取消 |
-| Office Tool Plus | 支持显示下载信息，支持取消，不支持断点续传 |
-| Office 部署工具 | 不支持显示下载信息 |
+| Engine                 | Description |
+| :--------------------- | ----------- |
+| Thunder                | Support setting proxy, setting speed limit, 断点续传 and display information, support pause, cancel. |
+| Office Tool Plus       | Support for displaying information, support for cancellation, 不支持断点续传 |
+| Office Deployment Tool | Does not support displaying information. |
 
 通常情况下，使用迅雷引擎是一个不错的选择，它不仅能够提供更多支持，下载速度也会更快，此处的迅雷并非走的是 P2P，而是传统的 HTTP 协议。
 
@@ -195,13 +195,13 @@ Office ISO 镜像应先挂载或者解压后，再选择其中内含的 CAB 文�
 
 ## Application preferences
 
-`应用程序首选项由微软提供数据，其文本均为机器翻译，可能存在某些语法错误，请以英文版本的为准。`
+`Application preferences are data provided by Microsoft, these texts are machine translated and may contain some grammatical errors.`
 
-应用程序首选项使你可以在部署 Office 前进行 Office 的设置，包括 VBA 宏通知、默认文件位置和默认文件格式。
+The function allow you defines application preferences for Office Apps, including VBA Macro notifications, default file locations, and default file format.
 
-除此之外，你还可以将应用程序首选项应用到现有的 Office 中，配置完毕后，在 *查看 XML 代码* 的子菜单中选择 *将首选项应用于 Office 应用程序* 即可，Office 部署程序会自动应用设置。
+You can apply new application preferences to client computers that already have Office installed. Click "Applying preferences for Office applications" in the "View XML code" submenu.
 
-您所定义的应用程序首选项将应用于设备的所有现有用户以及未来添加到该设备的任何新用户。如果在 Office 应用程序运行时应用首选项，则新的设置将在 Office 下次运行时生效。
+The app preferences are applied to all existing users of the device and any new users added to the device in the future. If you apply application preferences when Office apps are running, the preferences will be applied when Office is next restarted.
 
 ## Other options
 
