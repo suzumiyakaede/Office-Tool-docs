@@ -1,4 +1,4 @@
-# Welcome to use Office Tool Plus
+# Welcome
 
 ## Introduction
 
@@ -49,19 +49,19 @@ You can install a volume license besides the existing activated retail license. 
 Office Tool
 ├── Office Tool Plus.exe (main program)
 ├── ReadMe.txt (help docs)
-├── RunMe.bat (only in "with runtime"versions)
-├── Runtime (only in "with runtime"versions)
+├── RunMe.bat (only in "with runtime" versions)
+├── Runtime (only in "with runtime" versions)
 └── files
     ├── setup.exe (Microsoft Office Deployment Tool)
-    ├── activate ( OSPP and other relating files)
+    ├── activate (OSPP and other relating files)
     │   ├── OSPP.VBS (Office Software Protection Platform)
-    │   └── vlmcs.exe (a tool used to check if the KMS host is usable, only in "with vlmcs"versions)
+    │   └── vlmcs.exe (a tool used to check if the KMS host is usable, only in "with vlmcs" versions)
     ├── clean
-    │   ├── x64 ( Office Activation Information cleaner for x64 system)
-    │   ├── x86 (Office Activation Information cleaner for x86 system)
+    │   ├── x64 ( Office Activation cleaner for x64 system)
+    │   ├── x86 (Office Activation cleaner for x86 system)
     │   └── o15-ctrremove.diagcab (Official Microsoft Office uninstaller)
     ├── preferences (Office applications settings related data, provided by Microsoft)
-    └── Thunder (files related to Thunder download acceleration )
+    └── Thunder (files related to Thunder download acceleration)
 ```
 
 Usually, Office Tool Plus will download the needed components and keep it the latest version automatically. If some of the components are lost or cannot be downloaded automatically, we suggest you to redownload Office Tool Plus to fix this problem.
