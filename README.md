@@ -19,7 +19,7 @@ yarn docs:dev
 
 Make a folder and named to your culture, like `de-de`.
 
-In the docs folder, copy activate, deploy, others and start folders to the new folder, copy README.md too.
+**In the docs folder**, copy `activate`, `deploy`, `others` and `start` folders to the new folder, copy `README.md` too.
 
 Then translate all the .md files to your language.
 
@@ -52,7 +52,7 @@ Change `themeConfig -> locales` like that:
         }
     },
     nav: [
-        // Remember to set the culture (ll-cc), and translate the text attribs.
+        // Remember to set the culture (ll-cc), and translate the text attributes.
         { text: 'Start', link: '/de-de/start/' },
         { text: 'Deploy', link: '/de-de/deploy/' },
         { text: 'Activate', link: '/de-de/activate/' },
