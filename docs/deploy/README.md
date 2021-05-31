@@ -2,8 +2,8 @@
 
 使用 Office Tool Plus 部署 Office 时，做以下两件事即可：
 
-- 添加产品
-- 添加语言
+- Add products.
+- Add languages.
 
 这是部署 Office 最基本的要求，然后就可以开始部署 Office 了。
 
@@ -18,19 +18,19 @@
 > 不确定自己是否拥有 Office 授权？个人账户请[从这里查看](https://account.microsoft.com/services/)，企业用户可以[从这里查看](https://portal.office.com/account/?ref=MeControl#subscriptions)。
 
 ::: details Office 365 产品对照表
-| 产品计划 | 产品 ID |
-| ------------- |:-------------:|
-| 适用于企业的 Microsoft 365 应用 | O365ProPlusRetail |
-| Office 365 企业版 E3 | O365ProPlusRetail |
-| Office 365 企业版 E4 | O365ProPlusRetail |
-| Office 365 企业版 E5 | O365ProPlusRetail |
-| Office 365 中型企业版 | O365ProPlusRetail |
-| Office 365 商业版 | O365BusinessRetail |
-| Office 365 商业高级版 | O365BusinessRetail |
-| Office 小型企业高级版 | O365SmallBusPremRetail |
-| Microsoft 365 E3 | O365ProPlusRetail |
-| Microsoft 365 E5 | O365ProPlusRetail |
-| Microsoft 365 商业版 | O365BusinessRetail |
+| Office 365 Plan                   | Product ID             |
+| --------------------------------- |:----------------------:|
+| Microsoft 365 Apps for enterprise | O365ProPlusRetail      |
+| Office 365 Enterprise E3          | O365ProPlusRetail      |
+| Office 365 Enterprise E4          | O365ProPlusRetail      |
+| Office 365 Enterprise E5          | O365ProPlusRetail      |
+| Office 365 Midsize                | O365ProPlusRetail      |
+| Office 365 Business               | O365BusinessRetail     |
+| Office 365 Business Premium       | O365BusinessRetail     |
+| Office Small Business Premium     | O365SmallBusPremRetail |
+| Microsoft 365 E3                  | O365ProPlusRetail      |
+| Microsoft 365 E5                  | O365ProPlusRetail      |
+| Microsoft 365 Business            | O365BusinessRetail     |
 :::
 
 ## Languages
@@ -45,20 +45,20 @@
 
 ### 语言类型区别
 
-| 语言类型　　　　　　　| 说明 |
-| ------------------- | ------------- |
-| 完整　　　　　　　　　| 语言包包含显示语言和校对工具 |
-| 部分　　　　　　　　　| 语言包包含部分 Office 应用程序的显示语言，包含校对工具 |
-| 部分但不包含校对工具　| 语言包包含部分 Office 应用程序的显示语言，但不包含校对工具 |
-| 校对工具　　　　　　　| 语言包仅包含拼写检查器 |
+| Type                           | Description |
+| :----------------------------- | :---------- |
+| Full                           | The language pack includes display language and proofing tools. |
+| Partial                        | The language pack includes display language for some Office applications and includes proofing tools. |
+| Partial without proofing tools | The language pack includes display language for some Office applications but does not include proofing tools. |
+| Proofing tools                 | The language pack only include spell checker. |
 
 ## Applications
 
 应用程序会随你选择的产品不同而显示不同的内容。
 
-Groove 代表的是 OneDrive for Business, Lync 代表的是 Skype for Business. 某些应用程序（例如 Teams 和 OneDrive）可能需要重启系统才能完成安装。
+`Groove` stands for **OneDrive for Business**, `Lync` stands for **Skype for Business**. 某些应用程序（例如 Teams 和 OneDrive）可能需要重启系统才能完成安装。
 
-Bing 是一个用于 Chrome 和 Edge 的扩展，若要获取更多信息，请访问 [Microsoft 必应搜索和 Microsoft 365 企业应用版](https://docs.microsoft.com/zh-cn/deployoffice/microsoft-search-bing).
+Bing is a extension for Chrome and Edge etc. For more information, visit [Microsoft Search in Bing and Microsoft 365 Apps for enterprise](https://docs.microsoft.com/en-us/deployoffice/microsoft-search-bing).
 
 选择 Visio 或 Project 等产品时，由于其本身为一个不可选组件，因此不会出现在应用程序列表中。
 
@@ -68,13 +68,13 @@ Bing 是一个用于 Chrome 和 Edge 的扩展，若要获取更多信息，请�
 
 大多数情况下，只需要从当前通道或者半年度企业通道选择即可，下表列出了通道之间的区别：
 
-| 通道                   | 发布频率                       | 功能更新            |
-| --------------------- | ------------------------------ | ------------------- |
-| 当前通道               | 每个月至少一次（可能更频繁）  | 同发布频率             |
-| 半年度企业通道         | 每个月一次，每月的第二个星期二 | 一年两次（一月和七月） |
-| 月度企业通道           | 每个月一次，每月的第二个星期二 | 同发布频率            |
-| Office 2019 企业长期版 | 每个月一次，每月的第二个星期二 | 无                    |
-| Office 2021 企业长期版 | 每个月一次，每月的第二个星期二 | 无                    |
+| Channel                          | 发布频率                       | Feature updates            |
+| :------------------------------- | ------------------------------ | ------------------- |
+| Current Channel                  | 每个月至少一次（可能更频繁）  | 同发布频率             |
+| Semi-Annual Enterprise Channel   | Once a month, on the second Tuesday of the month. | 一年两次（一月和七月） |
+| Monthly Enterprise Channel       | Once a month, on the second Tuesday of the month. | 同发布频率            |
+| Office 2019 Perpetual Enterprise | Once a month, on the second Tuesday of the month. | None.                    |
+| Office 2021 Perpetual Enterprise | Once a month, on the second Tuesday of the month. | None.                    |
 
 > 企业长期版通道是 Office 2019/2021 批量版的专用通道。
 
@@ -82,7 +82,7 @@ Bing 是一个用于 Chrome 和 Edge 的扩展，若要获取更多信息，请�
 
 每个通道都会在每个月的第二个星期二发布安全更新（如果需要），这是设定好的计划。
 
-如果需要了解详细信息，请参阅 [Microsoft 365 应用版的更新通道概述](https://docs.microsoft.com/zh-cn/deployoffice/overview-update-channels)。
+如果需要了解详细信息，请参阅 [Overview of update channels for Microsoft 365 Apps](https://docs.microsoft.com/en-us/deployoffice/overview-update-channels)。
 
 ## Architecture
 
@@ -94,11 +94,11 @@ Bing 是一个用于 Chrome 和 Edge 的扩展，若要获取更多信息，请�
 - 开发内部 Office 解决方案，例如加载项或文档级别的自定义。 使用 64 位版 Office 将允许你提供这些解决方案的 64 位版和 32 位版。
 - Access 中的 Long Long 数据类型，虽然 32 位 Access 支持此数据类型，但在使用 32 位 VBA 库的代码或表达式时可能会看到意外结果。 64 位 VBA 提供 Long Long 数据类型的完整支持。
 
-如果需要了解详细信息，请参阅[选择 64 位或 32 位版本的 Office](https://support.microsoft.com/zh-cn/office/%E9%80%89%E6%8B%A9-64-%E4%BD%8D%E6%88%96-32-%E4%BD%8D%E7%89%88%E6%9C%AC%E7%9A%84-office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261)
+如果需要了解详细信息，请参阅[Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/en-us/office/choose-between-the-64-bit-or-32-bit-version-of-office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 
 ## Deployment mode
 
-| Mode            | Instruction |
+| Mode            | Description |
 | --------------- | ----------- |
 | Edit config     | 仅用于生成/修改 XML 配置文件，不能进行部署   |
 | Download        | 仅下载 Office 安装包，不会也不能启动安装程序 |
@@ -205,4 +205,4 @@ The app preferences are applied to all existing users of the device and any new 
 
 ## Other options
 
-其他选项介绍以及用法在[微软官方文档](https://docs.microsoft.com/zh-cn/deployoffice/office-deployment-tool-configuration-options)中有详细介绍，使用方法相同，在这里不再重复叙述。
+其他选项介绍以及用法在 [Microsoft docs](https://docs.microsoft.com/en-us/deployoffice/office-deployment-tool-configuration-options)中有详细介绍，使用方法相同，在这里不再重复叙述。

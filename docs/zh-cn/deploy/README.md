@@ -18,7 +18,7 @@
 > 不确定自己是否拥有 Office 授权？个人账户请[从这里查看](https://account.microsoft.com/services/)，企业用户可以[从这里查看](https://portal.office.com/account/?ref=MeControl#subscriptions)。
 
 ::: details Office 365 产品对照表
-| 产品计划        | 产品 ID  |
+| 订阅计划        | 产品 ID  |
 | ------------- |:-------------:|
 | 适用于企业的 Microsoft 365 应用 | O365ProPlusRetail |
 | Office 365 企业版 E3 | O365ProPlusRetail |
@@ -46,7 +46,7 @@
 ### 语言类型区别
 
 | 语言类型　　　　　　　| 说明 |
-| ------------------- | ------------- |
+| :------------------ | :--- |
 | 完整　　　　　　　　　| 语言包包含显示语言和校对工具 |
 | 部分　　　　　　　　　| 语言包包含部分 Office 应用程序的显示语言，包含校对工具 |
 | 部分但不包含校对工具　| 语言包包含部分 Office 应用程序的显示语言，但不包含校对工具 |
