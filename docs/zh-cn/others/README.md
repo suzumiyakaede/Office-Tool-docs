@@ -36,6 +36,7 @@
 - <kbd>Ctrl + 4</kbd>: 切换到文档转换页面
 - <kbd>Ctrl + T</kbd>: 显示设置页面
 - <kbd>Ctrl + B</kbd>: 显示关于页面
+- <kbd>Ctrl + L</kbd>: 安装 iSlide（仅部署页面）
 - <kbd>Ctrl + Shift + D</kbd>: 忽略警告或错误，强制进行部署（仅部署页面）
 
 ## Office Tool Plus 应用内命令

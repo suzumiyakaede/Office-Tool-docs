@@ -23,3 +23,5 @@ vlmcs 组件包含在 with vlmcs 版本的 Office Tool Plus 中。
 此功能支持移除 Office 2003 - Office 最新版本，简而言之，就是所有版本的 Office.
 
 如果过程中出现了某些文件无法访问的问题，你可以多试几次，也可以手动找到文件删除。
+
+瞭解更多資訊請前往 Microsoft 知識庫「[從電腦解除安裝 Office](https://support.microsoft.com/zh-tw/office/%E5%BE%9E%E9%9B%BB%E8%85%A6%E8%A7%A3%E9%99%A4%E5%AE%89%E8%A3%9D-office-9dd49b83-264a-477a-8fcc-2fdf5dbf61d8)」

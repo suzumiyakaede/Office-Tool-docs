@@ -36,6 +36,7 @@ Check it if you want to use Office internal channels.
 - <kbd>Ctrl + 4</kbd>: Switch to documents converter.
 - <kbd>Ctrl + T</kbd>: Display setting page.
 - <kbd>Ctrl + B</kbd>: Display about page.
+- <kbd>Ctrl + L</kbd>: Install iSlide (on deploy page).
 - <kbd>Ctrl + Shift + D</kbd>: Ignore errors or warnings, force start deploy (on deploy page).
 
 ## Office Tool Plus In-application commands
