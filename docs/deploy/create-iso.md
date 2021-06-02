@@ -21,7 +21,7 @@ Add languages as you want, if not, you need to connected to Internet when instal
 Change other settings if needed.
 
 ::: tip Tip
-如果你需要为其他版本的 Windows 下载 Office，例如在 Windows 10 中下载 Office 安装给 Windows 7 使用，请更改 *下载设置 - UA* 为对应系统版本，反之亦然。
+If you want to download Office for another version of Windows, for example, to download Office on Windows 10 for Windows 7, change *Download Settings - UA* to the corresponding system version.
 :::
 
 Click "start deploy" to download Office.

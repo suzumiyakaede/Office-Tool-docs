@@ -1,25 +1,23 @@
 # Configuration options
 
-使用 Office Tool Plus 部署 Office 时，做以下两件事即可：
+These are the minimum steps to deploy Office：
 
 - Add products.
 - Add languages.
 
-这是部署 Office 最基本的要求，然后就可以开始部署 Office 了。
+Once you've done that, you're ready to start deploying Office.
 
 ## Products
 
-购买了 Microsoft 365 的用户，添加产品的时候选择 Microsoft 365 产品即可，具体视你所拥有的授权而选择家庭版、个人版或企业版。
+If you have a genuine Office license, install your own purchased version of Office.
 
-购买了 Office 2019/2021 的用户，按照自己购买的版本选择即可，例如家庭和学生版，或者专业增强版。
+If you want to use KMS or MAK to activate Office, install volume products, such as Office 2019 Volume or Office 2021 Volume.
 
-如果需要使用 KMS 或 MAK 激活，请安装批量版产品，例如 Office 2019 批量版或 Office 2021 批量版。
+> Not sure if you have a genuine Office license? Login your personal account [here](https://account.microsoft.com/services/) or login your enterprise account [here](https://portal.office.com/account/?ref=MeControl#subscriptions).
 
-> 不确定自己是否拥有 Office 授权？个人账户请[从这里查看](https://account.microsoft.com/services/)，企业用户可以[从这里查看](https://portal.office.com/account/?ref=MeControl#subscriptions)。
-
-::: details Office 365 产品对照表
+::: details Office 365 Plan
 | Office 365 Plan                   | Product ID             |
-| --------------------------------- |:----------------------:|
+| --------------------------------- | :--------------------: |
 | Microsoft 365 Apps for enterprise | O365ProPlusRetail      |
 | Office 365 Enterprise E3          | O365ProPlusRetail      |
 | Office 365 Enterprise E4          | O365ProPlusRetail      |
@@ -37,13 +35,13 @@
 
 点击添加语言时，Office Tool Plus 会默认匹配当前系统的语言，如果匹配不正确或者需要选择其他语言，请手动更改。
 
-可以添加一个语言，也可以添加多个语言，列表中的首个完整类型的语言决定了 Shell UI 区域性，包括快捷方式、右键单击关联菜单和工具提示。如果决定要在初始安装后更改 Shell UI 语言，必须卸载并重新安装 Office。
+You can add one or more languages that you want. The first language in the list determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office.
 
-如果你没有添加语言，安装 Office 时将会自动匹配系统语言，如果系统语言无法匹配，则回退到英文（美国）。
+如果你没有添加语言，安装 Office 时将会自动匹配系统语言，如果系统语言无法匹配，则回退到 *高级设置 - 安装设置 - 备用语言* 所指定的语言。
 
 如果你选择了“仅部署校对工具”，则该语言将会被安装为校对工具，不包含 Office 显示语言。
 
-### 语言类型区别
+### Language Type
 
 | Type                           | Description |
 | :----------------------------- | :---------- |
@@ -54,72 +52,72 @@
 
 ## Applications
 
-应用程序会随你选择的产品不同而显示不同的内容。
+The application will display different items depending on the products you selected.
 
-`Groove` stands for **OneDrive for Business**, `Lync` stands for **Skype for Business**. 某些应用程序（例如 Teams 和 OneDrive）可能需要重启系统才能完成安装。
+`Groove` stands for **OneDrive for Business**, `Lync` stands for **Skype for Business**. Some applications, such as Teams and OneDrive, may require a system restart to complete the installation.
 
 Bing is a extension for Chrome and Edge etc. For more information, visit [Microsoft Search in Bing and Microsoft 365 Apps for enterprise](https://docs.microsoft.com/en-us/deployoffice/microsoft-search-bing).
 
 选择 Visio 或 Project 等产品时，由于其本身为一个不可选组件，因此不会出现在应用程序列表中。
 
-有关产品和应用程序的信息，可以查看 [Office Products Information](https://www.coolhub.top/tech-articles/products.html).
+For information on products and applications, you can view [Office Products Information](https://www.coolhub.top/tech-articles/products.html).
 
 ## Channels
 
 大多数情况下，只需要从当前通道或者半年度企业通道选择即可，下表列出了通道之间的区别：
 
-| Channel                          | 发布频率                       | Feature updates            |
-| :------------------------------- | ------------------------------ | ------------------- |
-| Current Channel                  | 每个月至少一次（可能更频繁）  | 同发布频率             |
-| Semi-Annual Enterprise Channel   | Once a month, on the second Tuesday of the month. | 一年两次（一月和七月） |
-| Monthly Enterprise Channel       | Once a month, on the second Tuesday of the month. | 同发布频率            |
-| Office 2019 Perpetual Enterprise | Once a month, on the second Tuesday of the month. | None.                    |
-| Office 2021 Perpetual Enterprise | Once a month, on the second Tuesday of the month. | None.                    |
+| Channel                          | Release frequency                                 | Feature updates                     |
+| :------------------------------- | ------------------------------------------------- | ----------------------------------- |
+| Current Channel                  | At least once a month (likely more often).        | Same as release frequency.          |
+| Semi-Annual Enterprise Channel   | Once a month, on the second Tuesday of the month. | Twice a year (in January and July). |
+| Monthly Enterprise Channel       | Once a month, on the second Tuesday of the month. | Same as release frequency.          |
+| Office 2019 Perpetual Enterprise | Once a month, on the second Tuesday of the month. | None.                               |
+| Office 2021 Perpetual Enterprise | Once a month, on the second Tuesday of the month. | None.                               |
 
 > 企业长期版通道是 Office 2019/2021 批量版的专用通道。
 
 表中列出的所有通道都是稳定通道，非测试通道，因此都可以日常使用。
 
-每个通道都会在每个月的第二个星期二发布安全更新（如果需要），这是设定好的计划。
+Each channel releases security updates (if needed) on the second Tuesday of each month, which is the set schedule.
 
-如果需要了解详细信息，请参阅 [Overview of update channels for Microsoft 365 Apps](https://docs.microsoft.com/en-us/deployoffice/overview-update-channels)。
+For more information, see [Overview of update channels for Microsoft 365 Apps](https://docs.microsoft.com/en-us/deployoffice/overview-update-channels)。
 
 ## Architecture
 
-**通常情况下，我们建议你安装 32 位的 Office**，但如果存在下列情况，则推荐安装 64 位的 Office:
+**In general, we recommend that you install the 32-bit version of Office**, 64-bit is the right choice when:
 
-- 处理大型数据集，例如包含复杂计算、许多数据透视表、与外部数据库的数据连接、Power Pivot、三维地图、Power View 或获取和转换的企业级 Excel 工作簿。 在这些情况下，64 位版 Office 可能表现更出色。
-- 在 PowerPoint 中处理超大图片、视频或动画。 64 位版 Office 可能更适合处理这些复杂幻灯片。
-- 在 Project 中处理超过 2 GB 的文件，尤其是项目包含许多子项目时。
-- 开发内部 Office 解决方案，例如加载项或文档级别的自定义。 使用 64 位版 Office 将允许你提供这些解决方案的 64 位版和 32 位版。
-- Access 中的 Long Long 数据类型，虽然 32 位 Access 支持此数据类型，但在使用 32 位 VBA 库的代码或表达式时可能会看到意外结果。 64 位 VBA 提供 Long Long 数据类型的完整支持。
+- You’re working with large data sets, like enterprise-scale Excel workbooks with complex calculations, many pivot tables, data connections to external databases, Power Pivot, 3D Map, Power View, or Get & Transform. The 64-bit version of Office may perform better in these cases.
+- You’re working with extremely large pictures, videos, or animations in PowerPoint. The 64-bit version of Office may be better suited to handle these complex slide decks.
+- You’re working with files over 2 GB in Project, especially if the project has many sub-projects.
+- You’re developing in-house Office solutions like add-ins or document-level customization. Using the 64-bit version of Office lets you deliver a 64-bit version of those solutions as well as a 32-bit version.
+- You’re working with the Large Number data type in Access, and while this data type is supported by 32-bit Access, you may see unexpected results when executing code or expressions that use native 32-bit VBA libraries. 64-bit VBA provides the LongLong data type which fully supports large numbers.
 
-如果需要了解详细信息，请参阅[Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/en-us/office/choose-between-the-64-bit-or-32-bit-version-of-office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
+For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/en-us/office/choose-between-the-64-bit-or-32-bit-version-of-office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 
 ## Deployment mode
 
 | Mode            | Description |
 | --------------- | ----------- |
-| Edit config     | 仅用于生成/修改 XML 配置文件，不能进行部署   |
-| Download        | 仅下载 Office 安装包，不会也不能启动安装程序 |
-| Install         | 可以在计算机上进行安装、卸载、修改 Office 等操作 |
-| Create ISO file | 将 Office 安装包与 Office Tool Plus 一起打包，如果有安装配置，则连同配置一起写入 Office ISO 中 |
+| Edit config     | Only for exporting/modifying XML configuration.   |
+| Download        | Only for downloading Office installation. |
+| Install         | You can install, uninstall, modify Office, etc. |
+| Create ISO file | Package the Office installation with Office Tool Plus. Write configuration if configured. |
 
-Office 安装包包含 Office、Visio 和 Project，由微软提供，无法精简。
+The Office installation contains Office, Visio and Project, provided by Microsoft.
 
-若要创建 ISO 文件，必须先下载 Office 安装包。
+To create an ISO file, you must first download the Office installation.
 
 ## Installation module
 
 ### Office Deployment Tool
 
-The Office Deployment Tool is an official Microsoft tool for deploying Office. 提供了部署 Office 的完整支持，适合所有人使用。
+The Office Deployment Tool is an official Microsoft tool for deploying Office. Provides full support for deploying Office.
 
 ### Office Tool Plus
 
-此模块是我们自行开发的安装模块，可以实现 Office 部署工具的大多数功能，并且还有 Office 部署工具无法做到的功能。不过缺点自然是不支持部分功能。
+The module can do most of the features of the Office Deployment Tool, and also features that the Office Deployment Tool cannot do.
 
-下表列出了两者之间的区别：
+The following content shows the differences between them.
 
 | Funtions | Office Deployment Tool | Office Tool Plus |
 | :------- | ---------------------- | ---------------- |
@@ -133,29 +131,27 @@ The Office Deployment Tool is an official Microsoft tool for deploying Office. �
 | Use Office internal channels      | × | √ |
 | Install special products          | × | √ |
 
-我们建议优先使用 Office 部署工具，如果 Office 部署工具出现了无法修复的问题，或者有特殊需求，才应该选择 Office Tool Plus 作为安装模块。
+We recommend that Office Deployment Tools be used first. If there is a problem with Office Deployment Tools that cannot be fixed, or if there are special needs, use Office Tool Plus as installation module.
 
 ## Download settings
 
-下载设置仅在 *下载* 模式，或者在勾选 *下载后安装* 的情况下生效。
+Download settings only take effect in *download* mode, or if *install after download* is checked.
 
-下载引擎的区别：
+The following content shows the differences between them.
 
-| Engine                 | Description |
-| :--------------------- | ----------- |
-| Thunder                | Support setting proxy, setting speed limit, 断点续传 and display information, support pause, cancel. |
-| Office Tool Plus       | Support for displaying information, support for cancellation, 不支持断点续传 |
-| Office Deployment Tool | Does not support displaying information. |
+| Engine                 | Display information | Set proxy | Pause & resume | Cancel |
+| :--------------------- | --- | --- | --- | --- |
+| Thunder                | ✓ | ✓ | ✓ | ✓ |
+| Office Tool Plus       | ✓ | ✗ | ✗ | ✓ |
+| Office Deployment Tool | ✗ | ✗ | ✗ | ✗ |
 
-通常情况下，使用迅雷引擎是一个不错的选择，它不仅能够提供更多支持，下载速度也会更快，此处的迅雷并非走的是 P2P，而是传统的 HTTP 协议。
-
-当 Office Tool Plus 找不到迅雷组件时，将会回退到 Office Tool Plus 作为下载引擎。
+When Office Tool Plus cannot find the Thunder component, will fall back to Office Tool Plus as the download engine.
 
 ### UA
 
-默认情况下，Office Tool Plus 会自动检测你的 Windows 系统版本，然后为你下载合适的 Office 版本。
+By default, Office Tool Plus automatically detects your Windows version and then downloads the appropriate version of Office for you.
 
-如果你需要为别的 Windows 版本下载 Office 安装包，你可以更改 UA 为特定的 Windows 版本。
+If you need to download the Office for another Windows version, you can change the UA to a specific Windows version.
 
 ## Installation files manage
 
@@ -173,9 +169,9 @@ Office ISO 镜像应先挂载或者解压后，再选择其中内含的 CAB 文�
 
 ## Office version
 
-此设置位于 *高级设置 - 安装设置* 中。
+This setting is located in *Advanced settings - Installation settings*.
 
-默认安装 Office 可用的最新版本，你无需设置 Office 的版本号。
+The latest available version of Office is installed by default.
 
 如果你需要安装 Office 的历史版本，你可以点击右侧的刷新按钮，从 Office 服务器获取所有可用的 Office 版本，每个通道都有不同的 Office 历史版本。
 
@@ -183,7 +179,7 @@ Office ISO 镜像应先挂载或者解压后，再选择其中内含的 CAB 文�
 
 ## Source path
 
-此设置位于 *高级设置 - 安装设置* 中。
+This setting is located in *Advanced settings - Installation settings*.
 
 默认情况下，在线安装 Office 时，Office 安装程序会从 Office CDN 服务器上获取 Office 安装文件。如果你在本地有 Office 安装包，则应该在安装文件管理中选择文件，而不是在此处写入路径。
 
@@ -191,7 +187,7 @@ Office ISO 镜像应先挂载或者解压后，再选择其中内含的 CAB 文�
 
 使用现有的安装包时，还应该确保通道与 Office 安装包对应，你不能够使用当前通道的安装包而指定半年度企业通道作为安装通道。
 
-**在下载模式，源路径属性用于指定应将 Office 安装包储存在什么位置。**
+**In download mode, this property is used to define where to save the files.**
 
 ## Application preferences
 
@@ -205,4 +201,4 @@ The app preferences are applied to all existing users of the device and any new 
 
 ## Other options
 
-其他选项介绍以及用法在 [Microsoft docs](https://docs.microsoft.com/en-us/deployoffice/office-deployment-tool-configuration-options)中有详细介绍，使用方法相同，在这里不再重复叙述。
+The other options are described in detail in the [Microsoft docs](https://docs.microsoft.com/en-us/deployoffice/office-deployment-tool-configuration-options), they are used in the same way.
