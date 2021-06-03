@@ -33,13 +33,13 @@ If you want to use KMS or MAK to activate Office, install volume products, such 
 
 ## Languages
 
-点击添加语言时，Office Tool Plus 会默认匹配当前系统的语言，如果匹配不正确或者需要选择其他语言，请手动更改。
+When you click `Add Language`, Office Tool Plus will match the current system language. If the match is incorrect or you need to select another language, change it manually.
 
 You can add one or more languages that you want. The first language in the list determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office.
 
 如果你没有添加语言，安装 Office 时将会自动匹配系统语言，如果系统语言无法匹配，则回退到 *高级设置 - 安装设置 - 备用语言* 所指定的语言。
 
-如果你选择了“仅部署校对工具”，则该语言将会被安装为校对工具，不包含 Office 显示语言。
+If you check "Deploy proofing tools only", the language will be installed as proofing tools.
 
 ### Language Type
 
@@ -64,7 +64,7 @@ For information on products and applications, you can view [Office Products Info
 
 ## Channels
 
-大多数情况下，只需要从当前通道或者半年度企业通道选择即可，下表列出了通道之间的区别：
+In most cases, it is sufficient to select either the `Current Channel` or the `Semi-Annual Enterprise Channel`, the differences between which are listed in the following table.
 
 | Channel                          | Release frequency                                 | Feature updates                     |
 | :------------------------------- | ------------------------------------------------- | ----------------------------------- |
@@ -74,9 +74,9 @@ For information on products and applications, you can view [Office Products Info
 | Office 2019 Perpetual Enterprise | Once a month, on the second Tuesday of the month. | None.                               |
 | Office 2021 Perpetual Enterprise | Once a month, on the second Tuesday of the month. | None.                               |
 
-> 企业长期版通道是 Office 2019/2021 批量版的专用通道。
+> For Office 2019/2021 Volume products, the perpetual enterprise channel is the dedicated channel.
 
-表中列出的所有通道都是稳定通道，非测试通道，因此都可以日常使用。
+All the channels listed in the table are stable channels.
 
 Each channel releases security updates (if needed) on the second Tuesday of each month, which is the set schedule.
 
