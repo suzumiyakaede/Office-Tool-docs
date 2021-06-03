@@ -37,7 +37,7 @@ When you click `Add Language`, Office Tool Plus will match the current system la
 
 You can add one or more languages that you want. The first language in the list determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office.
 
-如果你没有添加语言，安装 Office 时将会自动匹配系统语言，如果系统语言无法匹配，则回退到 *高级设置 - 安装设置 - 备用语言* 所指定的语言。
+If you do not add a language, Office will automatically match the system language when installing. or fall back to the language specified in *Advanced settings - Installation settings - Fallback language* if the system language cannot be matched.
 
 If you check "Deploy proofing tools only", the language will be installed as proofing tools.
 
@@ -58,7 +58,7 @@ The application will display different items depending on the products you selec
 
 Bing is a extension for Chrome and Edge etc. For more information, visit [Microsoft Search in Bing and Microsoft 365 Apps for enterprise](https://docs.microsoft.com/en-us/deployoffice/microsoft-search-bing).
 
-选择 Visio 或 Project 等产品时，由于其本身为一个不可选组件，因此不会出现在应用程序列表中。
+When you select a product such as Visio or Project, it does not appear in the list of applications.
 
 For information on products and applications, you can view [Office Products Information](https://www.coolhub.top/tech-articles/products.html).
 
@@ -155,17 +155,17 @@ If you need to download the Office for another Windows version, you can change t
 
 ## Installation files manage
 
-默认情况下，当你从 Office Tool Plus 下载 Office 安装包后，Office Tool Plus 会自动识别 Office 安装包信息并显示在此处。
+When you download Office from Office Tool Plus, Office Tool Plus will automatically detected the Office installation and displays it here.
 
-如果你有本地安装包，你可以点击 *选择文件*，然后指定 Office 安装文件中的任意一个 CAB 文件。
+If you have local installations, you can click *Select file* and then specify any of the CAB files in the Office installation.
 
-Office ISO 镜像应先挂载或者解压后，再选择其中内含的 CAB 文件。
+The Office ISO image should be mounted or extracted before selecting the CAB file contained within it.
 
-点击版本可以删除某个版本的 Office 安装包；点击语言则可以删除该安装包下的特定语言。
+You can click on the version number to delete an installation, or click on the language to delete a language pack.
 
-如果安装包显示错误，则不应该继续部署 Office，检查问题所在，解决问题后再继续部署操作。
+If the installation shows an error, you should check and fix the problems before deploying.
 
-点击重置可以清除安装包信息，重置源路径属性为默认值，相当于不再使用本地安装包进行部署。
+Clicking `Reset` clears the information and resets the source path to default value, and no longer uses the local source for deployment.
 
 ## Office version
 
@@ -173,19 +173,19 @@ This setting is located in *Advanced settings - Installation settings*.
 
 The latest available version of Office is installed by default.
 
-如果你需要安装 Office 的历史版本，你可以点击右侧的刷新按钮，从 Office 服务器获取所有可用的 Office 版本，每个通道都有不同的 Office 历史版本。
+If you need to install a historical version of Office, you can click the Refresh button on the right to get all available versions of Office.
 
-如果你下载了 Office 安装包，则此处会显示相应通道下所有 Office 安装包的版本。
+If you have downloaded Office installations, the versions of all Office installations under the corresponding channel are displayed here.
 
 ## Source path
 
 This setting is located in *Advanced settings - Installation settings*.
 
-默认情况下，在线安装 Office 时，Office 安装程序会从 Office CDN 服务器上获取 Office 安装文件。如果你在本地有 Office 安装包，则应该在安装文件管理中选择文件，而不是在此处写入路径。
+By default, the Office deployment tool fetches the Office installation files from the Office CDN. If you have the Office installation, you should select the file in the `Installation files manage` instead of writing the path here.
 
-如果使用了 SMB 共享 Office 安装文件，则可以在此处写入 SMB 共享路径，与此同时，还应该指定 Office 的版本号。
+If you are using SMB to share Office installation, you can write the SMB path here, and you should also specify the version of Office.
 
-使用现有的安装包时，还应该确保通道与 Office 安装包对应，你不能够使用当前通道的安装包而指定半年度企业通道作为安装通道。
+When using an existing installation, you should also make sure that the channel corresponds to the Office installation.
 
 **In download mode, this property is used to define where to save the files.**
 
