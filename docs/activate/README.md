@@ -23,7 +23,7 @@ Activation with MAK is permanent if the activation information is not lost.
 
 The KMS renewal settings is determined by the KMS host. Typically, an activation is valid for 180 days and is renewed every 7 days.
 
-## License mnagement
+## License management
 
 If you didn't install Office, or the existing version of Office is too old, Office Tool Plus will NOT read the Office license information, and will NOT show the license in the drop-down list.
 
@@ -33,7 +33,7 @@ You can find the license you need in the license drop-down list, and then click 
 
 Office Tools Plus has integrated default keys for the retail licenses, and GVLK for the volume licenses. As a result, you can use KMS to activate your Office just after you installed the volume license without additionally installing GVLK.
 
-When you are installig a license, the original licenses will NOT be covered, the licenses will coexist.
+When you are installing a license, the original licenses will NOT be covered, the licenses will coexist.
 
 ### Install other licenses
 

@@ -13,7 +13,7 @@ Differences between the versions:
 - with vlmcs: Includes vlmcs component, it may be detected as a virus.
 - Normal: Only Office Tool Plus and base component.
 
-> We recommand you to download Office Tool Plus with runtime.
+> We recommend you to download Office Tool Plus with runtime.
 
 ## Unpack
 

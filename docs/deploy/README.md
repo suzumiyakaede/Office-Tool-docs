@@ -119,7 +119,7 @@ The module can do most of the features of the Office Deployment Tool, and also f
 
 The following content shows the differences between them.
 
-| Funtions | Office Deployment Tool | Office Tool Plus |
+| Functions | Office Deployment Tool | Office Tool Plus |
 | :------- | ---------------------- | ---------------- |
 | Support for MECM.                 | √ | × |
 | Update deadline.                  | √ | × |

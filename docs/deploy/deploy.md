@@ -65,12 +65,16 @@ Start deploy.
 
 If the applications does not have the items you want, such as Access, add a new product and select Access.
 
+## Upgrade Office
+
+If the client can not connect to Internet, you can download Office installation from another PC, then make an ISO or copy the files to the client, add the same products as installed products, finally start deploy.
+
 ## Migration architecture
 
 Office Deployment Tool supports changing Office from 32-bit to 64-bit (or 64-bit to 32-bit) automatically.
 
 First change the architecture to the one you want. If you want to migrate to 64-bit Office, then select 64-bit now.
 
-Chech *Advanced settings - upgrade settings - migrate architecture*, then start deploy.
+Check *Advanced settings - upgrade settings - migrate architecture*, then start deploy.
 
 Office Deployment Tool will first uninstall your Office and then install the 64-bit Office.

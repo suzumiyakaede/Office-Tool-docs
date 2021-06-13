@@ -13,7 +13,7 @@ By default, Office Tool Plus displays the native name of languages.
 - Normal: Display in default format.
 - Native name: Display the native name of languages.
 - English name: Display the languages name in English.
-- Localized name: Display according to the system language setting. If your system language is English, all of the languages will diaplay in English.
+- Localized name: Display according to the system language setting. If your system language is English, all of the languages will display in English.
 
 Language names are data provided by Windows and may be displayed differently by different versions of Windows.
 
@@ -32,7 +32,7 @@ Check it if you want to use Office internal channels.
 - <kbd>F5</kbd>: Refresh Office information and reset deploy settings (on deploy page).
 - <kbd>Ctrl + 1</kbd>: Switch to deploy page.
 - <kbd>Ctrl + 2</kbd>: Switch to activate page.
-- <kbd>Ctrl + 3</kbd>: Swtich to toolbox page.
+- <kbd>Ctrl + 3</kbd>: Switch to toolbox page.
 - <kbd>Ctrl + 4</kbd>: Switch to documents converter.
 - <kbd>Ctrl + T</kbd>: Display setting page.
 - <kbd>Ctrl + B</kbd>: Display about page.
