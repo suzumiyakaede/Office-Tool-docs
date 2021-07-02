@@ -45,8 +45,6 @@
 
 **/setImage path** 手动指定背景图，Path: 背景图路径（支持 JPG，PNG，支持本地路径以及 HTTP 路径）
 
-**/clImage** 清除当前背景图
-
 **/getKey product-ID** 获取产品密钥，若是批量产品，返回 GVLK，其他产品则返回默认密钥。ProductID: 产品 ID，例如：ProPlus2019Volume
 
 **/osppILByID product-ID** 安装指定产品的 Office 许可证， ProductID: 产品 ID。例如：MondoVolume

@@ -45,8 +45,6 @@ The commands are case-insensitive and are executed in the order they are entered
 
 **/setImage path** Set the background image, support local, network and HTTP path.
 
-**/clImage** Clear current background image.
-
 **/getKey product-ID** Get a normal product key for a license, if the product is volume product, return GVLK instead.
 
 **/osppILByID product-ID** Install licenses and normal key with a user-provided product ID.
