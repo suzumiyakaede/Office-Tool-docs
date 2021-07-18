@@ -37,7 +37,7 @@ When you click `Add Language`, Office Tool Plus will match the current system la
 
 You can add one or more languages that you want. The first language in the list determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office.
 
-If you do not add a language, Office will automatically match the system language when installing. or fall back to the language specified in *Advanced settings - Installation settings - Fallback language* if the system language cannot be matched.
+If you do not add a language, Office will automatically match the system language when installing, or fall back to the language specified in *Advanced settings - Installation settings - Fallback language* if the system language cannot be matched.
 
 If you check "Deploy proofing tools only", the language will be installed as proofing tools.
 
