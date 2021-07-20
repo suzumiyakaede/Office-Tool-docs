@@ -23,7 +23,7 @@
 
 ### 高级功能
 
-启用此选项后，Office Tool Plus 将会加载 Office 内部通道。
+启用此选项后，Office Tool Plus 将会加载 Office 内部通道和内部产品，例如 Dogfood 通道和 Mondo 2016 产品。
 
 ## Office Tool Plus 快捷键
 

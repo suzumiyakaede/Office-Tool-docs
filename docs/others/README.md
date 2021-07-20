@@ -23,7 +23,7 @@ To change the language display name to normal, you need to restart application t
 
 ### Advanced features
 
-Check it if you want to use Office internal channels.
+By checking it, Office Tool Plus will loading the internel channels and products, such as Dogfood channel and Mondo 2016 product.
 
 ## Office Tool Plus shortcut keys
 
