@@ -30,6 +30,8 @@ Click "start deploy" to download Office.
 
 After the download is complete, make sure that the Office installation information is loaded in the "Installation files manage" without errors.
 
+It's suggested to verify Office installation.
+
 Change deployment mode to `create ISO file`, and choose a way to do:
 
 ::: details Create Office ISO with default configuration.
@@ -50,7 +52,6 @@ Click "start deploy", select the save location and file name for ISO file.
 Note that the following features are not available in this mode：
 - Create desktop shortcuts.
 - Install iSlide after installation.
-- Sign out, shut down or restart after deployment.
 - Use Office Tool Plus as installation module.
 
 If you need the above, please choose another way to create Office ISO file.
