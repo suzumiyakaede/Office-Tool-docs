@@ -61,17 +61,17 @@ deploy /addProduct ProPlus2021Volume /channel PerpetualVL2021
 
 | 命令 | 解释 |  |
 | :-- | :-- | :-- |
-| /addProduct value | 添加产品 | value: productID_language_excludeApps_MAK，其中 productID 是产品的 ID，例如 ProPlus2021Volume，language 是产品语言，例如 zh-cn 或 zh-cn,en-us，excludeApps 表示要排除的应用程序，例如 Access,Groove,Lync，MAK 为大批量产品密钥，只能为批量版 (Volume) 产品设置。 |
-| /removeProduct value | 卸载产品 | value: productID_language，使用方法同 /addProduct |
-| /removeAll | 卸载全部产品 |  |
+| /addProduct value | 添加产品 | **value: productID_language_excludeApps_MAK**<br>productID: 产品 ID，例如 ProPlus2021Volume<br>language: 产品语言，例如 zh-cn 或 zh-cn,en-us<br>excludeApps: 要排除的应用程序，例如 Access,Groove,Lync<br>MAK: 批量产品密钥，只能为批量版 (Volume) 产品设置。 |
+| /removeProduct value | 卸载产品 | **value: productID_language**，使用方法同 /addProduct |
+| /removeAll | 卸载全部产品 | /removeAll |
 | /channel value | 设置通道 | value: 通道 ID，例如 Current 或 PerpetualVL2021. |
 | /clientEdition value | 设置体系结构 | value: 32 或 64，表示要安装的 Office 的体系结构。 |
-| /migrateArch | 迁移体系结构 |  |
-| /version value | Office 版本 | value: Office 版本号，例如 16.0.00000.00000 |
-| /sourcePath value | 源路径属性 | value: 路径，例如 D:\Office Tool |
-| /module value | 安装模块 | value: 0 或 1，0 表示 Office 部署工具，1 表示 Office Tool Plus. |
-| /downloadFirst | 下载后安装 |  |
-| /createShortcuts | 创建桌面快捷方式 |  |
+| /migrateArch | 迁移体系结构 | /migrateArch |
+| /version value | 设置 Office 版本 | value: Office 版本号，例如 16.0.00000.00000 |
+| /sourcePath value | 设置源路径属性 | value: 路径，例如 D:\Office Tool |
+| /module value | 设置安装模块 | value: 0 或 1，0 表示 Office 部署工具，1 表示 Office Tool Plus. |
+| /downloadFirst | 设置下载后安装 | /downloadFirst |
+| /createShortcuts | 创建桌面快捷方式 | /createShortcuts |
 
 ### OSPP 命令
 
@@ -80,7 +80,7 @@ ospp [options]
 使用 OSPP 命令时，你需要指定为 OSPP，然后再写参数，例如以下是一条简单的激活命令：
 
 ``` batch
-ospp inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /act
+ospp /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /act
 ```
 
 | 命令 | 解释 | 使用方法 |
@@ -92,4 +92,4 @@ ospp inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /act
 | /setprt:value | 设置 KMS 主机端口，默认 1688. | /setprt:1688 |
 | /act | 激活 Office 客户端产品。 | /act |
 
-有关 OSPP 的更多命令请查看[微软官方文档](https://docs.microsoft.com/zh-cn/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)取得。
+有关 OSPP 的更多命令请查看[微软官方文档](https://docs.microsoft.com/zh-cn/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)。
