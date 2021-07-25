@@ -47,16 +47,49 @@
 
 **/getKey product-ID** 获取产品密钥，若是批量产品，返回 GVLK，其他产品则返回默认密钥。ProductID: 产品 ID，例如：ProPlus2019Volume
 
-**/osppILByID product-ID** 安装指定产品的 Office 许可证， ProductID: 产品 ID。例如：MondoVolume
+### 部署命令
 
-**/osppinpkey:value** 安装指定的 Office 密钥，例如：/osppinpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+deploy [options]
 
-**/osppunpkey:value** 卸载指定的 Office 密钥，例如：/osppunpkey:XXXXX
+使用部署命令时，你需要指定为 deploy，然后再写参数，例如以下是一条简单的部署命令：
 
-**/osppsethst:value** 设置 KMS 主机地址，例如：/osppsethst:kms.example.com
+``` batch
+deploy /addProduct ProPlus2021Volume /channel PerpetualVL2021
+```
 
-**/osppsetprt:value** 设置 KMS 主机端口，默认 1688，例如：/osppsetprt:1688
+以下是部署命令支持的参数：
 
-**/osppact** 激活 Office 客户端产品
+| 命令 | 解释 |  |
+| :-- | :-- | :-- |
+| /addProduct value | 添加产品 | value: productID_language_excludeApps_MAK，其中 productID 是产品的 ID，例如 ProPlus2021Volume，language 是产品语言，例如 zh-cn 或 zh-cn,en-us，excludeApps 表示要排除的应用程序，例如 Access,Groove,Lync，MAK 为大批量产品密钥，只能为批量版 (Volume) 产品设置。 |
+| /removeProduct value | 卸载产品 | value: productID_language，使用方法同 /addProduct |
+| /removeAll | 卸载全部产品 |  |
+| /channel value | 设置通道 | value: 通道 ID，例如 Current 或 PerpetualVL2021. |
+| /clientEdition value | 设置体系结构 | value: 32 或 64，表示要安装的 Office 的体系结构。 |
+| /migrateArch | 迁移体系结构 |  |
+| /version value | Office 版本 | value: Office 版本号，例如 16.0.00000.00000 |
+| /sourcePath value | 源路径属性 | value: 路径，例如 D:\Office Tool |
+| /module value | 安装模块 | value: 0 或 1，0 表示 Office 部署工具，1 表示 Office Tool Plus. |
+| /downloadFirst | 下载后安装 |  |
+| /createShortcuts | 创建桌面快捷方式 |  |
 
-其它 OSPP 参数使用方法类似，在每个命令前添加 ospp 字眼即可，OSPP 帮助文档可从[微软官方文档](https://docs.microsoft.com/zh-cn/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)取得。
+### OSPP 命令
+
+ospp [options]
+
+使用 OSPP 命令时，你需要指定为 OSPP，然后再写参数，例如以下是一条简单的激活命令：
+
+``` batch
+ospp inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /act
+```
+
+| 命令 | 解释 | 使用方法 |
+| :-- | :-- | :-- |
+| /ilbyid value | 安装指定产品的 Office 许可证。 | /ilbyid MondoVolume |
+| /inpkey:value | 安装指定的 Office 密钥。 | /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX |
+| /unpkey:value | 卸载指定的 Office 密钥。 | /unpkey:XXXXX |
+| /sethst:value | 设置 KMS 主机地址。 | /sethst:kms.example.com |
+| /setprt:value | 设置 KMS 主机端口，默认 1688. | /setprt:1688 |
+| /act | 激活 Office 客户端产品。 | /act |
+
+有关 OSPP 的更多命令请查看[微软官方文档](https://docs.microsoft.com/zh-cn/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)取得。
