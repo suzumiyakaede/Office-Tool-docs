@@ -43,9 +43,12 @@
 
 命令不区分大小写，按照输入顺序执行。如果路径中含有空格，请使用 "" (英文双引号) 将路径包括起来。
 
-**/setImage path** 手动指定背景图，Path: 背景图路径（支持 JPG，PNG，支持本地路径以及 HTTP 路径）
+### 程序命令
 
-**/getKey product-ID** 获取产品密钥，若是批量产品，返回 GVLK，其他产品则返回默认密钥。ProductID: 产品 ID，例如：ProPlus2019Volume
+| 命令 | 说明 | 使用方法 |
+| :-- | :-- | :-- |
+| /setImage path | 设置背景图 | Path: 背景图路径，PNG 或 JPG。<br>支持本地以及 HTTP 路径。 |
+| /getKey value | 获取产品默认密钥 | value: 产品 ID.<br>例如：ProPlus2019Volume |
 
 ### 部署命令
 
@@ -59,19 +62,41 @@ deploy /addProduct ProPlus2021Volume /channel PerpetualVL2021
 
 以下是部署命令支持的参数：
 
-| 命令 | 解释 |  |
+| 命令 | 说明 |  |
 | :-- | :-- | :-- |
-| /addProduct value | 添加产品 | **value: productID_language_excludeApps_MAK**<br>productID: 产品 ID，例如 ProPlus2021Volume<br>language: 产品语言，例如 zh-cn 或 zh-cn,en-us<br>excludeApps: 要排除的应用程序，例如 Access,Groove,Lync<br>MAK: 批量产品密钥，只能为批量版 (Volume) 产品设置。 |
-| /removeProduct value | 卸载产品 | **value: productID_language**，使用方法同 /addProduct |
-| /removeAll | 卸载全部产品 | /removeAll |
-| /channel value | 设置通道 | value: 通道 ID，例如 Current 或 PerpetualVL2021. |
-| /clientEdition value | 设置体系结构 | value: 32 或 64，表示要安装的 Office 的体系结构。 |
-| /migrateArch | 迁移体系结构 | /migrateArch |
-| /version value | 设置 Office 版本 | value: Office 版本号，例如 16.0.00000.00000 |
-| /sourcePath value | 设置源路径属性 | value: 路径，例如 D:\Office Tool |
-| /module value | 设置安装模块 | value: 0 或 1，0 表示 Office 部署工具，1 表示 Office Tool Plus. |
-| /downloadFirst | 设置下载后安装 | /downloadFirst |
-| /createShortcuts | 创建桌面快捷方式 | /createShortcuts |
+| /addProduct value | 添加产品 | **value: productID_language_excludeApps_MAK**<br>其中 productID 为必需参数。<br>详细使用方法见下面的部署示例。 |
+| /removeProduct value | 卸载产品 | **value: productID_language**<br>使用方法同 /addProduct |
+| /removeAll | 卸载全部产品 |  |
+| /channel value | 设置通道 | value: 通道 ID。<br>例如 Current 或 PerpetualVL2021. |
+| /clientEdition value | 设置体系结构 | value: 32 或 64。 |
+| /migrateArch | 迁移体系结构 |  |
+| /version value | 设置 Office 版本 | value: Office 版本号。<br>例如 16.0.00000.00000 |
+| /sourcePath value | 设置源路径属性 | value: 路径。<br>例如 D:\Office Tool |
+| /module value | 设置安装模块 | value: 0 或 1。<br>0: Office 部署工具，1: Office Tool Plus. |
+| /downloadFirst | 设置下载后安装 |  |
+| /createShortcuts | 创建桌面快捷方式 |  |
+
+#### 部署 Office 示例
+
+在计算机上部署简体中文版的 Office 2021 专业增强版 - 批量版，排除 Access, Outlook, OneNote 程序。
+
+``` batch
+deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote
+```
+
+如果你需要为批量产品设置 MAK，你可以使用以下命令：
+
+``` batch
+deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote_XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+```
+
+如果你需要忽略某个参数，可以将其置空，例如不设置语言（不建议这样做）：
+
+``` batch
+deploy /addProduct ProPlus2021Volume__Access,Outlook,OneNote
+```
+
+指定多个应用程序或语言时，你需要使用「英文逗号」将每个参数隔开，例如 Access,Lync 或 zh-cn,en-us 。
 
 ### OSPP 命令
 
@@ -83,7 +108,7 @@ ospp [options]
 ospp /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /act
 ```
 
-| 命令 | 解释 | 使用方法 |
+| 命令 | 说明 | 使用方法 |
 | :-- | :-- | :-- |
 | /ilbyid value | 安装指定产品的 Office 许可证。 | /ilbyid MondoVolume |
 | /inpkey:value | 安装指定的 Office 密钥。 | /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX |
