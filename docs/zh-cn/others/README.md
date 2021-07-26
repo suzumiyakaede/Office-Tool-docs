@@ -90,13 +90,17 @@ deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote
 deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote_XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
 ```
 
-如果你需要忽略某个参数，可以将其置空，例如不设置语言（不建议这样做）：
+如果你需要忽略某个参数，可以将其置空。例如不设置语言（不建议这样做）：
 
 ``` batch
 deploy /addProduct ProPlus2021Volume__Access,Outlook,OneNote
 ```
 
-指定多个应用程序或语言时，你需要使用「英文逗号」将每个参数隔开，例如 Access,Lync 或 zh-cn,en-us 。
+指定多个应用程序或语言时，你需要使用「英文逗号」将其隔开，例如 Access,Lync 或 zh-cn,en-us。
+
+如果需要添加多个产品，请指定多个 addProduct 参数。
+
+如果需要添加语言包或者校对工具，请使用 LanguagePack 或 ProofingTools 作为产品 ID.
 
 ### OSPP 命令
 
