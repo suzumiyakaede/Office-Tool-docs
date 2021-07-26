@@ -43,20 +43,80 @@ By checking it, Office Tool Plus will loading the internel channels and products
 
 The commands are case-insensitive and are executed in the order they are entered. If the path contains spaces, use "" (double quotes) to include the path.
 
-**/setImage path** Set the background image, support local, network and HTTP path.
+### Application commands
 
-**/getKey product-ID** Get a normal product key for a license, if the product is volume product, return GVLK instead.
+| Command | Description |  |
+| :-- | :-- | :-- |
+| /setImage value | Set background image. | value: Path, support PNG or JPG。<br>Supprt local or HTTP path. |
+| /getKey value | Get product default key. | value: Product ID. |
 
-**/osppILByID product-ID** Install licenses and normal key with a user-provided product ID.
+### Deploy commands
 
-**/osppinpkey:value** Install a product key, example: /osppinpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+deploy [options]
 
-**/osppunpkey:value** Uninstall an installed product key with the last five digits of the product key to uninstall. Example: /osppunpkey:XXXXX
+When using the deploy command, you need to specify it as deploy and then write the parameters, for example, the following is a simple deploy command.
 
-**/osppsethst:value** Sets a KMS host name. Example: /osppsethst:kms.example.com
+``` batch
+deploy /addProduct ProPlus2021Volume /channel PerpetualVL2021
+```
 
-**/osppsetprt:value** Sets a KMS port, the default port number is 1688. Example: /osppsetprt:1688
+| Command | Description |  |
+| :-- | :-- | :-- |
+| /addProduct value | Add product. | value: productID_language_excludeApps_MAK<br>productID is required.<br>See deploy examples below for details. |
+| /removeProduct value | Uninstall product. | value: productID_language<br>Same as /addProduct |
+| /removeAll | Uninstall all products. |  |
+| /channel value | Set channel. | value: channel ID, [see more](https://docs.microsoft.com/en-us/deployoffice/office-deployment-tool-configuration-options#channel-attribute-part-of-add-element). |
+| /clientEdition value | Set architecture. | value: 32 or 64。 |
+| /migrateArch | Migrate architecture. |  |
+| /version value | Set Office version | value: Office version. |
+| /sourcePath value | Set source path. | value: path, support local or SMB path. |
+| /module value | Set installation module. | value: 0 or 1。<br>0: Office Deployment Tool, 1: Office Tool Plus. |
+| /downloadFirst | Set install after download. |  |
+| /createShortcuts | Create desktop shortcuts. |  |
 
-**/osppact** Activates installed Office product keys.
+#### Deploy Office examples
 
-Other OSPP commands are used in a similar way, just add the "ospp" in front of each command, the OSPP help documentation is available from [Microsoft docs](https://docs.microsoft.com/en-us/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office).
+Deploy English edition of Office 2021 Pro Plus - Volume，excludes Access, Outlook, OneNote:
+
+``` batch
+deploy /addProduct ProPlus2021Volume_en-us_Access,Outlook,OneNote
+```
+
+If you want to set MAK, you can do like that:
+
+``` batch
+deploy /addProduct ProPlus2021Volume_en-us_Access,Outlook,OneNote_XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+```
+
+To ignore some attributes, use space instead like that:
+
+``` batch
+deploy /addProduct ProPlus2021Volume__Access,Outlook,OneNote
+```
+
+When specifying multiple applications or languages, you need to use commas to separate them. Such as Access,Lync or zh-cn,en-us.
+
+If you need to add more than one product, specify multiple addProduct parameters.
+
+If you need to add a language pack or proofreading tool, please use **LanguagePack** or **ProofingTools** as the product ID.
+
+### OSPP commands
+
+ospp [options]
+
+When using the OSPP command, you need to specify it as OSPP and then write the parameters, for example, the following is a simple OSPP command.
+
+``` batch
+ospp /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /act
+```
+
+| Command | Description | Usage |
+| :-- | :-- | :-- |
+| /ilbyid value | Installs licenses with user-provided product ID. | /ilbyid MondoVolume |
+| /inpkey:value | Installs a product key. | /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX |
+| /unpkey:value | Uninstalls an installed product key. | /unpkey:XXXXX |
+| /sethst:value | Sets a KMS host name. | /sethst:kms.example.com |
+| /setprt:value | Sets a KMS port, normal value is 1688. | /setprt:1688 |
+| /act | Activates installed Office product keys. | /act |
+
+For more information please visit [OSPP documentation](https://docs.microsoft.com/en-us/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office).

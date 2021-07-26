@@ -45,10 +45,10 @@
 
 ### 程序命令
 
-| 命令 | 说明 | 使用方法 |
+| 命令 | 说明 |  |
 | :-- | :-- | :-- |
-| /setImage path | 设置背景图 | Path: 背景图路径，PNG 或 JPG。<br>支持本地以及 HTTP 路径。 |
-| /getKey value | 获取产品默认密钥 | value: 产品 ID.<br>例如：ProPlus2019Volume |
+| /setImage value | 设置背景图 | value: 路径，支持 PNG 或 JPG。<br>支持本地以及 HTTP 路径。 |
+| /getKey value | 获取产品默认密钥 | value: 产品 ID. |
 
 ### 部署命令
 
@@ -60,25 +60,23 @@ deploy [options]
 deploy /addProduct ProPlus2021Volume /channel PerpetualVL2021
 ```
 
-以下是部署命令支持的参数：
-
 | 命令 | 说明 |  |
 | :-- | :-- | :-- |
-| /addProduct value | 添加产品 | **value: productID_language_excludeApps_MAK**<br>其中 productID 为必需参数。<br>详细使用方法见下面的部署示例。 |
-| /removeProduct value | 卸载产品 | **value: productID_language**<br>使用方法同 /addProduct |
+| /addProduct value | 添加产品 | value: productID_language_excludeApps_MAK<br>其中 productID 为必需参数。<br>详细使用方法见下面的部署示例。 |
+| /removeProduct value | 卸载产品 | value: productID_language<br>使用方法同 /addProduct |
 | /removeAll | 卸载全部产品 |  |
-| /channel value | 设置通道 | value: 通道 ID。<br>例如 Current 或 PerpetualVL2021. |
+| /channel value | 设置通道 | value: 通道 ID, [查看详细信息](https://docs.microsoft.com/zh-cn/deployoffice/office-deployment-tool-configuration-options#channel-attribute-part-of-add-element) |
 | /clientEdition value | 设置体系结构 | value: 32 或 64。 |
 | /migrateArch | 迁移体系结构 |  |
-| /version value | 设置 Office 版本 | value: Office 版本号。<br>例如 16.0.00000.00000 |
-| /sourcePath value | 设置源路径属性 | value: 路径。<br>例如 D:\Office Tool |
+| /version value | 设置 Office 版本号 | value: Office 版本号。 |
+| /sourcePath value | 设置源路径属性 | value: 路径，支持本地、SMB 路径。 |
 | /module value | 设置安装模块 | value: 0 或 1。<br>0: Office 部署工具，1: Office Tool Plus. |
 | /downloadFirst | 设置下载后安装 |  |
 | /createShortcuts | 创建桌面快捷方式 |  |
 
 #### 部署 Office 示例
 
-在计算机上部署简体中文版的 Office 2021 专业增强版 - 批量版，排除 Access, Outlook, OneNote 程序。
+在计算机上部署简体中文版的 Office 2021 专业增强版 - 批量版，排除 Access, Outlook, OneNote:
 
 ``` batch
 deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote
@@ -100,7 +98,7 @@ deploy /addProduct ProPlus2021Volume__Access,Outlook,OneNote
 
 如果需要添加多个产品，请指定多个 addProduct 参数。
 
-如果需要添加语言包或者校对工具，请使用 LanguagePack 或 ProofingTools 作为产品 ID.
+如果需要添加语言包或者校对工具，请使用 **LanguagePack** 或 **ProofingTools** 作为产品 ID.
 
 ### OSPP 命令
 

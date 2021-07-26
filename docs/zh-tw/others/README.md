@@ -43,20 +43,80 @@
 
 命令不区分大小写，按照输入顺序执行。如果路径中含有空格，请使用 "" (英文双引号) 将路径包括起来。
 
-**/setImage path** 手动指定背景图，Path: 背景图路径（支持 JPG，PNG，支持本地路径以及 HTTP 路径）
+### 程序命令
 
-**/getKey product-ID** 获取产品密钥，若是批量产品，返回 GVLK，其他产品则返回默认密钥。ProductID: 产品 ID，例如：ProPlus2019Volume
+| 命令 | 说明 |  |
+| :-- | :-- | :-- |
+| /setImage value | 设置背景图 | value: 路径，支持 PNG 或 JPG。<br>支持本地以及 HTTP 路径。 |
+| /getKey value | 获取产品默认密钥 | value: 产品 ID. |
 
-**/osppILByID product-ID** 安装指定产品的 Office 许可证， ProductID: 产品 ID。例如：MondoVolume
+### 部署命令
 
-**/osppinpkey:value** 安装指定的 Office 密钥，例如：/osppinpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+deploy [options]
 
-**/osppunpkey:value** 卸载指定的 Office 密钥，例如：/osppunpkey:XXXXX
+使用部署命令时，你需要指定为 deploy，然后再写参数，例如以下是一条简单的部署命令：
 
-**/osppsethst:value** 设置 KMS 主机地址，例如：/osppsethst:kms.example.com
+``` batch
+deploy /addProduct ProPlus2021Volume /channel PerpetualVL2021
+```
 
-**/osppsetprt:value** 设置 KMS 主机端口，默认 1688，例如：/osppsetprt:1688
+| 命令 | 说明 |  |
+| :-- | :-- | :-- |
+| /addProduct value | 添加产品 | value: productID_language_excludeApps_MAK<br>其中 productID 为必需参数。<br>详细使用方法见下面的部署示例。 |
+| /removeProduct value | 卸载产品 | value: productID_language<br>使用方法同 /addProduct |
+| /removeAll | 卸载全部产品 |  |
+| /channel value | 设置通道 | value: 通道 ID, [查看详细信息](https://docs.microsoft.com/zh-cn/deployoffice/office-deployment-tool-configuration-options#channel-attribute-part-of-add-element) |
+| /clientEdition value | 设置体系结构 | value: 32 或 64。 |
+| /migrateArch | 迁移体系结构 |  |
+| /version value | 设置 Office 版本号 | value: Office 版本号。 |
+| /sourcePath value | 设置源路径属性 | value: 路径，支持本地、SMB 路径。 |
+| /module value | 设置安装模块 | value: 0 或 1。<br>0: Office 部署工具，1: Office Tool Plus. |
+| /downloadFirst | 设置下载后安装 |  |
+| /createShortcuts | 创建桌面快捷方式 |  |
 
-**/osppact** 激活 Office 客户端产品
+#### 部署 Office 示例
 
-其它 OSPP 参数使用方法类似，在每个命令前添加 ospp 字眼即可，OSPP 帮助文档可从[微软官方文档](https://docs.microsoft.com/zh-cn/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)取得。
+在计算机上部署简体中文版的 Office 2021 专业增强版 - 批量版，排除 Access, Outlook, OneNote:
+
+``` batch
+deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote
+```
+
+如果你需要为批量产品设置 MAK，你可以使用以下命令：
+
+``` batch
+deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote_XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+```
+
+如果你需要忽略某个参数，可以将其置空。例如不设置语言（不建议这样做）：
+
+``` batch
+deploy /addProduct ProPlus2021Volume__Access,Outlook,OneNote
+```
+
+指定多个应用程序或语言时，你需要使用「英文逗号」将其隔开，例如 Access,Lync 或 zh-cn,en-us。
+
+如果需要添加多个产品，请指定多个 addProduct 参数。
+
+如果需要添加语言包或者校对工具，请使用 **LanguagePack** 或 **ProofingTools** 作为产品 ID.
+
+### OSPP 命令
+
+ospp [options]
+
+使用 OSPP 命令时，你需要指定为 OSPP，然后再写参数，例如以下是一条简单的激活命令：
+
+``` batch
+ospp /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /act
+```
+
+| 命令 | 说明 | 使用方法 |
+| :-- | :-- | :-- |
+| /ilbyid value | 安装指定产品的 Office 许可证。 | /ilbyid MondoVolume |
+| /inpkey:value | 安装指定的 Office 密钥。 | /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX |
+| /unpkey:value | 卸载指定的 Office 密钥。 | /unpkey:XXXXX |
+| /sethst:value | 设置 KMS 主机地址。 | /sethst:kms.example.com |
+| /setprt:value | 设置 KMS 主机端口，默认 1688. | /setprt:1688 |
+| /act | 激活 Office 客户端产品。 | /act |
+
+有关 OSPP 的更多命令请查看[微软官方文档](https://docs.microsoft.com/zh-cn/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)。
