@@ -57,7 +57,7 @@ deploy [options]
 When using the deploy command, you need to specify it as deploy and then write the parameters, for example, the following is a simple deploy command.
 
 ``` batch
-deploy /addProduct ProPlus2021Volume /channel PerpetualVL2021
+deploy /addProduct O365ProPlusRetail
 ```
 
 | Command | Description |  |
@@ -79,19 +79,19 @@ deploy /addProduct ProPlus2021Volume /channel PerpetualVL2021
 Deploy English edition of Office 2021 Pro Plus - Volume，excludes Access, Outlook, OneNote:
 
 ``` batch
-deploy /addProduct ProPlus2021Volume_en-us_Access,Outlook,OneNote
+deploy /addProduct ProPlus2021Volume_en-us_Access,Outlook,OneNote /channel PerpetualVL2021
 ```
 
 If you want to set MAK, you can do like that:
 
 ``` batch
-deploy /addProduct ProPlus2021Volume_en-us_Access,Outlook,OneNote_XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+deploy /addProduct ProPlus2021Volume_en-us_Access,Outlook,OneNote_XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /channel PerpetualVL2021
 ```
 
 To ignore some attributes, use space instead like that:
 
 ``` batch
-deploy /addProduct ProPlus2021Volume__Access,Outlook,OneNote
+deploy /addProduct ProPlus2021Volume__Access,Outlook,OneNote /channel PerpetualVL2021
 ```
 
 When specifying multiple applications or languages, you need to use commas to separate them. Such as Access,Lync or zh-cn,en-us.

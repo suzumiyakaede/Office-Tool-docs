@@ -57,7 +57,7 @@ deploy [options]
 使用部署命令时，你需要指定为 deploy，然后再写参数，例如以下是一条简单的部署命令：
 
 ``` batch
-deploy /addProduct ProPlus2021Volume /channel PerpetualVL2021
+deploy /addProduct O365ProPlusRetail
 ```
 
 | 命令 | 说明 |  |
@@ -79,19 +79,19 @@ deploy /addProduct ProPlus2021Volume /channel PerpetualVL2021
 在计算机上部署简体中文版的 Office 2021 专业增强版 - 批量版，排除 Access, Outlook, OneNote:
 
 ``` batch
-deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote
+deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote /channel PerpetualVL2021
 ```
 
 如果你需要为批量产品设置 MAK，你可以使用以下命令：
 
 ``` batch
-deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote_XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote_XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /channel PerpetualVL2021
 ```
 
 如果你需要忽略某个参数，可以将其置空。例如不设置语言（不建议这样做）：
 
 ``` batch
-deploy /addProduct ProPlus2021Volume__Access,Outlook,OneNote
+deploy /addProduct ProPlus2021Volume__Access,Outlook,OneNote /channel PerpetualVL2021
 ```
 
 指定多个应用程序或语言时，你需要使用「英文逗号」将其隔开，例如 Access,Lync 或 zh-cn,en-us。
