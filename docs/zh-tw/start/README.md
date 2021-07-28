@@ -49,8 +49,8 @@ Office 许可证能够共存，而不只是零售版或者批量版本
 Office Tool
 ├── Office Tool Plus.exe (主程序)
 ├── ReadMe.txt (说明文件)
-├── RunMe.bat (仅在 with runtime 版本中包含)
-├── Runtime (仅在 with runtime 版本中包含)
+├── RunMe.bat (仅在 with runtime 版本中提供)
+├── Runtime (仅在 with runtime 版本中提供)
 └── files
     ├── setup.exe (微软 Office 部署工具)
     ├── activate (包含 OSPP 以及相关文件)
