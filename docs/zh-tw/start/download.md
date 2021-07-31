@@ -17,7 +17,7 @@
 
 ## 步驟二: 解壓縮
 
-下載完成後，請將 Office Tool Plus 解壓縮到一個合適的位置(例如桌面)。**請勿在壓縮檔內直接開啟 Office Tool Plus。**。
+下載完成後，請將 Office Tool Plus 解壓縮到一個合適的位置(例如桌面)。**請勿在壓縮檔內直接開啟 Office Tool Plus**。
 
 ## 步驟三: 執行
 
