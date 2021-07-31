@@ -37,7 +37,7 @@ with runtime 版本的 Office Tool Plus 允許您在沒有安裝 .NET Desktop Ru
 ::: details 建立內含預設設定檔的 Office ISO
 不進行任何設定變更，直接點擊「開始部署」，選擇檔案儲存路徑和檔案名稱即可。
 
-此模式下的 Office Tool Plus 會自動配對 Office 安裝文件路徑，因此您不需要清除、修改路徑參數。]
+此模式下的 Office Tool Plus 會自動配對 Office 安裝文件路徑，因此您不需要清除、修改路徑參數。
 :::
 
 ::: details 建立不含預設設定檔的 Office ISO
