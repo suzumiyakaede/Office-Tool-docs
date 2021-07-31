@@ -1,80 +1,74 @@
-# 创建 Office ISO
+# 建立 Office ISO
 
-创建 Office ISO 文件允许你与其他人分享 Office，或者用于大批量、多次安装。
+## 序言
 
-为了获得更好的体验，请确保你始终从[官方网站](https://otp.landian.vip/)下载了最新的 with runtime 版本的 Office Tool Plus，有时候我们会更新 Runtime 文件夹和 RunMe.bat 文件，这些文件不会随着 Office Tool Plus 的自动升级而更新，需要手动重新下载。
+透過 Office ISO 檔案，您將可以與其他人共享 Office 安裝檔案，可用於大量、多次部署，適合公司使用。
 
-我们建议您一个月更新一次 Office ISO，与 Office 更新频率保持一致，每个月的第二个星期二为 Office 固定的补丁日。
+### 提醒
 
-::: tip 提示
-使用 with runtime 版本的 Office Tool Plus 允许你在没有安装 .NET Desktop Runtime 的情况下直接运行程序，并且还可以设置参数，这对大批量安装非常有帮助。
+為了確保您得到最佳體驗，請確保您始終從我們的 [官方網站](https://otp.landian.vip/) 下載了最新的 with runtime 版本的 Office Tool Plus。在必要時，我們會更新函式庫文件和 RunMe.bat 檔案，這些檔案並不會隨著 Office Tool Plus 更新系統跟著更新。需要您手動重新下載。
+
+另外，我們也建議您**每一個月的第二個星期二**更新一次 Office ISO 文件，使得 Office 能處在最新版本中。
+
+::: Hint
+with runtime 版本的 Office Tool Plus 允許您在沒有安裝 .NET Desktop Runtime 函式庫的情況下直接執行程式，且還可設定參數，這對於大量部署非常有幫助。
 :::
 
-## 下载 Office 安装文件
+## 下載 Office 安裝文件
 
-确保自己使用的版本无误后，双击 RunMe.bat 打开 Office Tool Plus.
+在確保您自己使用的 Office Tool Plus 無誤後，雙擊 RunMe.bat 開啟 Office Tool Plus。
 
-在部署页面，切换部署模式为“下载”。
+1. 進入部署功能頁，在右側的「基本設定」-> 「部署設定」中切換部署模式為「下載」。
+2. 新增產品，按照您的需求（例如 Office 2021 專業增強版 (大量授權)）。
+3. 新增語言套件，按照您的需求。**若不新增，安裝時將需要網際網路連線下載。**
+4. 一句要修改架構和頻道設定，其餘設定可依照您的需求設定。
 
-添加产品，按需选择，比如 Office 2021 专业增强版 - 批量版。
+確認設定無誤後，點擊「開始部署」。等待下載完畢後，接續進行建立 Office ISO 文件。
 
-添加语言，按需选择，如果一个都不加，安装的时候依然需要联网。
+## 建立 Office ISO 檔案
 
-根据需要修改体系结构和通道设置，其他设置可以按需更改。
+完成下載 Office 安裝文件後，請確保「安裝檔案管理」是否能正確載入，且正確識別 Office 安裝檔案資訊。
+確認識別正確後，請在右側的「基本設定」-> 「部署設定」中切換部署模式為「建立 ISO 檔案」。
 
-::: tip 提示
-如果你需要为其他版本的 Windows 下载 Office，例如在 Windows 10 中下载 Office 安装包给 Windows 7 使用，请更改 *下载设置 - UA* 为对应系统版本，反之亦然。
+-----
+
+下方提供三種方式建立 ISO 檔案，請選擇適合您的進行：
+
+::: details 建立內含預設設定檔的 Office ISO
+不進行任何設定變更，直接點擊「開始部署」，選擇檔案儲存路徑和檔案名稱即可。
+
+此模式下的 Office Tool Plus 會自動配對 Office 安裝文件路徑，因此您不需要清除、修改路徑參數。]
 :::
 
-确认所有设置无误后，点击“开始部署”。待下载完成后，继续下一步操作。
-
-## 创建 Office ISO 文件
-
-下载完成后，确认“安装文件管理”中能加载并正确识别 Office 安装包信息。
-
-为了确保安装文件的完整性，还应该进行「校验」以便检查安装文件是否有问题。
-
-切换部署模式为“创建 ISO 文件”，在这三种方式中，你可以选择任意一种方式进行：
-
-::: details 创建包含默认配置的 Office ISO
-保持刚才的设置不变，点击“开始部署”，选择文件保存路径以及文件名即可。
-
-此模式下的 Office Tool Plus 会自动适配安装文件路径，因此你无须清空或者更改源路径属性。
+::: details 建立不含預設設定檔的 Office ISO
+按下 [F5]鍵，或者手動清除產品和語言套件，然後點擊「開始部署」，選擇文件儲存路徑和和檔案名稱即可。
 :::
 
-::: details 创建不含默认配置的 Office ISO
-按下 F5，或者手动清空产品和语言，点击“开始部署”，选择文件保存路径以及文件名即可。
-:::
-
-::: details 创建自动安装的 Office ISO
+::: details 建立自動安裝的 Office ISO
 
 ``` txt
-注意，该模式下的 Office Tool Plus 无法使用以下功能：
-- 安装完成后创建桌面快捷方式。
-- 安装完成后安装 iSlide 插件。
-- 使用 Office Tool Plus 作为安装模块。
+❗注意❗ 此模式下的 Office Tool Plus 無法部署(使用)以下功能：
 
-如有以上需求，请选择前两个方式创建 Office ISO 文件。
+- 安裝完成後建立桌面捷徑。
+- 安裝完成後自動安裝 iSlide 擴充程式。
+- 安裝完成後登出/關機/重新啟動系統。
+- 使用 Office Tool Plus 安裝模組進行安裝。
+
+如有以上需求，請不要選擇此方式建立 Office ISO 檔案。
 ```
 
-保持刚才的设置不变。
-
-用记事本或者 Visual Studio Code 等编辑器打开 RunMe.bat，修改 22 行内容如下：
+不進行任何設定變更，使用記事本或 Visual Studio Code 或其他文字編輯程式打開 RunMe.bat，修改第 22 行程如下：
 
 ``` batch
 start "" "Office Tool Plus.exe" /loadConfig "%~dp0ConfigForISO.xml" /SourcePath "%~dp0"
 ```
 
-保存 RunMe.bat，回到 Office Tool Plus，点击“开始部署”，选择文件保存路径以及文件名即可。
+然後儲存 RunMe.bat，回到 Office Tool Plus ，點擊「開始部署」，最後選擇文件儲存路徑和和檔案名稱即可。
 
-创建 ISO 完毕后，将 RunMe.bat 内容改为原来的样子，否则你将不能再次打开 Office Tool Plus.
-
-原来的样子：
+結束建立 ISO 檔案後，請將 RunMe.bat 的內容修正回原來的狀態，否則您無法再次開啟 Office Tool Plus。
 
 ``` batch
 start "" "Office Tool Plus.exe"
 ```
 
 :::
-
-创建完成后，你应该测试一下 Office ISO 是否和你预期的一样工作。

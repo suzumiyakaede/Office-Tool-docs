@@ -30,6 +30,11 @@ module.exports = {
 			lang: 'zh-CN',
 			title: 'Office Tool Plus Docs',
 			description: 'Office Tool Plus 官方帮助文档。'
+		},
+		'/zh-tw/': {
+			lang: 'zh-TW',
+			title: 'Office Tool Plus Docs',
+			description: 'Office Tool Plus 協助文件'
 		}
 	},
 	themeConfig: {
@@ -142,21 +147,22 @@ module.exports = {
 			'/zh-tw/': {
 				selectText: '選擇語言',
 				label: '繁體中文 (台灣)',
-				editLinkText: '在 GitHub 上编辑此页',
+				editLinkText: '在 GitHub 編輯此頁',
 				serviceWorker: {
 					updatePopup: {
-						message: "发现新内容可用.",
-						buttonText: "刷新"
+						message: "發現新版本可用",
+						buttonText: "重新載入"
 					}
 				},
 				nav: [
-					{ text: '入门', link: '/zh-tw/start/' },
+					{ text: '入門', link: '/zh-tw/start/' },
 					{ text: '部署', link: '/zh-tw/deploy/' },
-					{ text: '激活', link: '/zh-tw/activate/' },
+					{ text: '啟用', link: '/zh-tw/activate/' },
 					{ text: '更多', link: '/zh-tw/others/toolbox' },
-					{ text: '官方博客', link: 'https://www.coolhub.top' },
+					{ text: '作者Blog', link: 'https://www.coolhub.top' },
+					{ text: 'Cotpear', link: 'https://www.cotpear.com?utm_source=docs-otp-web' },
 					{
-						text: '群组', items: [
+						text: '群組', items: [
 							{ text: 'Telegram', link: 'https://otp.landian.vip/grouplink/telegram.html' }
 						]
 					}
