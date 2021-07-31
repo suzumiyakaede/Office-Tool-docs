@@ -79,17 +79,13 @@ deploy /addProduct O365ProPlusRetail
 在電腦上部署繁體中文版的 Office 專業增強版 2021 (大量授權版), 排除 Access, Outlook, OneNote:
 
 ``` batch
-
 deploy /addProduct ProPlus2021Volume_zh-tw_Access,Outlook,OneNote /channel PerpetualVL2021
-
 ```
 
 如果您需要為大量授權的產品設定 MAK 金鑰，您可以使用以下指令:
 
 ``` batch
-
 deploy /addProduct ProPlus2021Volume_zh-tw_Access,Outlook,OneNote_XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /channel PerpetualVL2021
-
 ```
 
 如果你需要忽略某個參數，可以將其空白。例如不設置語言 (不建議這樣做):
