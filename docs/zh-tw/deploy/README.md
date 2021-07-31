@@ -7,9 +7,9 @@
 
 ## 產品
 
- - 購買了 Microsoft 365 的用戶，新增產品的時候，選擇 Microsoft 365 產品即可，具體視你所擁有的授權，而選擇家用版、個人版或企業版。
- - 購買了 Office 2019/2021 的用戶，按照自己購買的版本選擇即可，例如家用版、個人版、專業增強版。
- - 如果需要使用 KMS 或 MAK 啟用，請安裝大量授權版產品，例如 Office 2019 大量授權版或 Office 2021 大量授權版。
+- 購買了 Microsoft 365 的用戶，新增產品的時候，選擇 Microsoft 365 產品即可，具體視你所擁有的授權，而選擇家用版、個人版或企業版。
+- 購買了 Office 2019/2021 的用戶，按照自己購買的版本選擇即可，例如家用版、個人版、專業增強版。
+- 如果需要使用 KMS 或 MAK 啟用，請安裝大量授權版產品，例如 Office 2019 大量授權版或 Office 2021 大量授權版。
 
 > 不確定自己是否擁有 Office 授權？個人帳戶請[從這裡檢視](https://account.microsoft.com/services/)，企業用戶可以[從這裡檢視](https://portal.office.com/account/?ref=MeControl#subscriptions)。
 

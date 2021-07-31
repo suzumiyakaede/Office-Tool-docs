@@ -54,7 +54,7 @@
 
 deploy [options]
 
-使用部署指令時，您需要指定為 deploy，然後再寫參數，例如以下是一條簡單的部署命令: 
+使用部署指令時，您需要指定為 deploy，然後再寫參數，例如以下是一條簡單的部署命令:
 
 ``` batch
 deploy /addProduct O365ProPlusRetail
@@ -84,7 +84,7 @@ deploy /addProduct ProPlus2021Volume_zh-tw_Access,Outlook,OneNote /channel Perpe
 
 ```
 
-如果您需要為大量授權的產品設定 MAK 金鑰，您可以使用以下指令: 
+如果您需要為大量授權的產品設定 MAK 金鑰，您可以使用以下指令:
 
 ``` batch
 
@@ -124,4 +124,3 @@ ospp /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /act
 | /act | 啟用 Office 產品。 | /act |
 
 有關 OSPP 的更多命令請閱讀[Microsoft Docs](https://docs.microsoft.com/zh-tw/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)。
-

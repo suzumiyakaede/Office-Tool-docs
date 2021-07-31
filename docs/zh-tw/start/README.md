@@ -63,4 +63,5 @@ Office Tool
     ├── preferences (Office 應用程式系號設定的相關數據，由 Microsoft 提供)
     └── Thunder (Thunder加速開放平臺相關文件)
 ```
+
 在正常情況信，Office Tool Plus 會自動下載缺失的模組，並自動更新至最新版本。如果某些模組丟失或無法自動下載，建議您重新下載 Office Tool Plus 以解決問題。
