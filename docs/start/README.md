@@ -11,7 +11,7 @@ The following products are supported:
 - Microsoft 365.
 - Office 2016, 2019, 2021.
 - Visio 2016, 2019, 2021 and Online Plan 2.
-- Project 2016, 2019, 2021 and Online Plan 2.
+- Project 2016, 2019, 2021 and Online Desktop Client.
 
 No matter what, Office Tool Plus is always your best helper.
 
