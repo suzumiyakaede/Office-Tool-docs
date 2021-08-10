@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://otp.landian.vip/static/images/logo.png
+heroImage: https://otp.landian.vip/en-us/images/logo-5-years.webp
 heroText: 
 tagline: A powerful and useful tool for Office deployments.
 actionText: Start

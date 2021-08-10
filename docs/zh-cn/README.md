@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://otp.landian.vip/static/images/logo.png
+heroImage: https://otp.landian.vip/static/images/logo-5-years.webp
 heroText: 
 tagline: 一个强大且实用的 Office 部署工具
 actionText: 开始入门
