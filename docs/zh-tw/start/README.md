@@ -60,7 +60,7 @@ Office Tool
     │   ├── x64 (64 位元系統專用的 Office 啟用資訊清理工具)
     │   ├── x86 (32 位元系統專用的 Office 啟用資訊清理工具)
     │   └── o15-ctrremove.diagcab (Microsoft 官方 Office 清理工具)
-    ├── preferences (Office 應用程式系號設定的相關數據，由 Microsoft 提供)
+    ├── preferences (Office 應用程式喜好設定的相關數據，由 Microsoft 提供)
     └── Thunder (Thunder加速開放平臺相關文件)
 ```
 
