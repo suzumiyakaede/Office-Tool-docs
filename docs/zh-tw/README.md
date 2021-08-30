@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://otp.landian.vip/zh-tw/images/logo-5-years-cht.webp
+heroImage: https://otp.landian.vip/static/images/logo.webp
 heroText: 
 tagline: 多功能集於一身的 Office 部署工具
 actionText: 開始入門
