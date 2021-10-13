@@ -4,7 +4,7 @@
 
 Office Tool Plus 是一個多功能集於一身的 Office 部署工具。
 
-Office Tool Plus 是基於[Office 部署工具](https://aka.ms/ODT)和 [OSPP](https://docs.microsoft.com/en-us/DeployOffice/vlactivation/tools-to-manage-volume-activation-of-office) 開發的，可以使您更加便利的部署 Microsoft，其內建的 Thunder 下載引擎更能加速您下載 Microsoft Office 安裝文件。我們還有開發許多小工具，方便您更加輕鬆、快速地管理、啟用 Microsoft Office 喔！
+Office Tool Plus 是基於[Office 部署工具](https://aka.ms/ODT)和 [OSPP](https://docs.microsoft.com/en-us/DeployOffice/vlactivation/tools-to-manage-volume-activation-of-office) 開發的，可以使您更加便利的部署 Microsoft Office，其內建的 Thunder 下載引擎更能加速您下載 Microsoft Office 安裝文件。我們還有開發許多小工具，方便您更加輕鬆、快速地管理、啟用 Office 喔！
 
 我們支援以下產品的管理和其他功能：
 
