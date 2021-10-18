@@ -4,7 +4,7 @@
 
 [.NET 5 Desktop Runtime x86](https://dotnet.microsoft.com/download/dotnet/current/runtime).
 
-with runtime 版本中自帶 Runtime library，您可以透過開啟 RunMe.bat，直接開啟 Office Tool Plus，而無需安裝 Desktop Runtime。
+with runtime 版本中自帶 Runtime library，您可以直接開啟 Office Tool Plus，而無需安裝 Desktop Runtime。
 
 ## 支援系統
 

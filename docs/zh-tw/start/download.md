@@ -21,4 +21,4 @@
 
 ## 步驟三: 執行
 
-使用 with runtime 版本時，您可以透過開啟 RunMe.bat 檔案來快速執行 Office Tool Plus，如果您使用的是**普通版本**或 **with vlmcs** 版本，或是需要直接點擊 Office Tool Plus.exe 開啟程式的需求，請確保您已安裝了 [.NET 5 Desktop Runtime x86](https://dotnet.microsoft.com/download/dotnet/current/runtime)，**請注意，Office Tool Plus 必須使用 x86 位元的函式庫，並不是依照您的系統架構。**
+使用 with runtime 版本時，您可以直接執行 Office Tool Plus，如果您使用的是**普通版本**或 **with vlmcs** 版本，請確保您已安裝了 [.NET 5 Desktop Runtime x86](https://dotnet.microsoft.com/download/dotnet/current/runtime)，**請注意，Office Tool Plus 必須使用 x86 位元的函式庫，並不是依照您的系統架構。**

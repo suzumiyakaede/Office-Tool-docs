@@ -49,13 +49,12 @@ You can install a volume license besides the existing activated retail license. 
 Office Tool
 ├── Office Tool Plus.exe (main program)
 ├── ReadMe.txt (help docs)
-├── RunMe.bat (only included in "with runtime" version)
-├── Runtime (only included in "with runtime" version)
+├── hostfxr.dll (.NET Host)
+├── shared (.NET Runtimes)
 └── files
     ├── setup.exe (Microsoft Office Deployment Tool)
     ├── activate (OSPP and other relating files)
-    │   ├── OSPP.VBS (Office Software Protection Platform)
-    │   └── vlmcs.exe (a tool used to check if the KMS host is usable, only included in "with vlmcs" version)
+    │   └── OSPP.VBS (Office Software Protection Platform)
     ├── clean
     │   ├── x64 (Office Activation cleaner for x64 system)
     │   ├── x86 (Office Activation cleaner for x86 system)

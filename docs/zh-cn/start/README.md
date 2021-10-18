@@ -49,13 +49,12 @@ Office 许可证能够共存，而不只是零售版或者批量版本
 Office Tool
 ├── Office Tool Plus.exe (主程序)
 ├── ReadMe.txt (说明文件)
-├── RunMe.bat (仅在 with runtime 版本中提供)
-├── Runtime (仅在 with runtime 版本中提供)
+├── hostfxr.dll (.NET Host)
+├── shared (.NET Runtimes)
 └── files
     ├── setup.exe (微软 Office 部署工具)
     ├── activate (包含 OSPP 以及相关文件)
-    │   ├── OSPP.VBS (Office Software Protection Platform)
-    │   └── vlmcs.exe (用于检测 KMS 主机可用性的工具，仅在 with vlmcs 版本中提供)
+    │   └── OSPP.VBS (Office Software Protection Platform)
     ├── clean
     │   ├── x64 (64 位系统专用 Office 激活信息清除工具)
     │   ├── x86 (32 位系统专用 Office 激活信息清除工具)

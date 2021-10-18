@@ -21,4 +21,4 @@
 
 ## 运行
 
-使用 with runtime 版本时，你可以通过双击 RunMe.bat 文件来运行 Office Tool Plus，如果你使用的是不自带框架的版本，或者需要双击 Office Tool Plus.exe 直接打开，请确保你已经安装了 [.NET 5 Desktop Runtime x86](https://dotnet.microsoft.com/download/dotnet/current/runtime)，**请注意，软件需要的是 x86 的运行库，与你的系统架构版本无关系。**
+使用 with runtime 版本时，你可以直接运行 Office Tool Plus，如果你使用的是不自带框架的版本，请确保你已经安装了 [.NET 5 Desktop Runtime x86](https://dotnet.microsoft.com/download/dotnet/current/runtime)，**请注意，软件需要的是 x86 的运行库，与你的系统架构版本无关系。**

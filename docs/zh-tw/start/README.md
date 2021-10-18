@@ -49,13 +49,12 @@ Office 的授權是可以共存的，不限於零售版或大量授權版。
 Office Tool
 ├── Office Tool Plus.exe (主程式)
 ├── ReadMe.txt (說明文件)
-├── RunMe.bat (僅在 with runtime 版本中提供)
-├── Runtime (僅在 with runtime 版本中提供)
+├── hostfxr.dll (.NET Host)
+├── shared (.NET Runtimes)
 └── files
     ├── setup.exe (Microsoft Office 部署工具)
     ├── activate (包含 OSPP 以及相關檔案)
-    │   ├── OSPP.VBS (Office Software Protection Platform)
-    │   └── vlmcs.exe (用於檢測 KMS 主機可用性的工具，僅在 with vlmcs 版本中提供)
+    │   └── OSPP.VBS (Office Software Protection Platform)
     ├── clean
     │   ├── x64 (64 位元系統專用的 Office 啟用資訊清理工具)
     │   ├── x86 (32 位元系統專用的 Office 啟用資訊清理工具)

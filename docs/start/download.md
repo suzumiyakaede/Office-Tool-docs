@@ -21,4 +21,4 @@ Extract Office Tool Plus to a location, such as desktop. **Do NOT run Office Too
 
 ## Run
 
-You can run Office Tool Plus by click `RunMe.bat`. If you doesn't download Office Tool Plus with runtime, or you want to run Office Tool Plus directly, please install [.NET 5 Desktop Runtime x86](https://dotnet.microsoft.com/download/dotnet/current/runtime). **You need to install the 32-bit of Desktop runtime even on a 64-bit system.**
+You can open Office Tool Plus directly when using with runtime version. If you doesn't download Office Tool Plus with runtime, please install [.NET 5 Desktop Runtime x86](https://dotnet.microsoft.com/download/dotnet/current/runtime). **You need to install the 32-bit of Desktop runtime even on a 64-bit system.**
