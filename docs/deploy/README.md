@@ -14,15 +14,15 @@ You may need to configure these options:
 - Architecture: [Click here for more information](https://help.coolhub.top/deploy/configuration-options.html#architecture).
 - Channel: If you want to install Office 2019/2021 Volume License products, you need to change channel to Office 2019/2021 Perpetual Enterprise. For more information please [see the details](https://help.coolhub.top/deploy/configuration-options.html#channels).
 
-When everything is done, you can start deploy now. The Office installer will only download required files and instal Office from Office CDN. Internet connection required, but may consume less data traffic. After installation, the installer will clean up the cache.
+When everything is done, you can start deploy now. The Office installer will only download required files and install Office from Office CDN. Internet connection required, but may consume less data traffic. After installation, the installer will clean up the cache.
 
 ## Offline installation
 
 Do the following things:
 
-- If you are using the Office ISO created by Office Tool Plus, mount it or unpak it, open Office Tool Plus in the ISO, then deploy Office as online installation.
+- If you are using the Office ISO created by Office Tool Plus, mount it or unpack it, open Office Tool Plus in the ISO, then deploy Office as online installation.
 - If you have Office image (iso) downloaded from other site, mount it or unpack it, then "Select file" on "Installation files management". Finally deploy Office as online installation.
-- If you have not yet downloaded the Office installation, check "Download first, then deploy" on "Deploy settings". Finally deploy Office as online installation. This may consume more data traffic. After installation, the installation files will store on ***Office Tool\Office***.
+- If you have not yet downloaded the Office installation, check "Download first, then deploy" on "Deploy settings". Finally deploy Office as online installation. This may consume more data traffic. After installation, the installation files will store on ***Office Tool\Office*** folder.
 
 ::: tip Note
 When you are using offline installation, the Office installation package determines which version of Office you can install.
