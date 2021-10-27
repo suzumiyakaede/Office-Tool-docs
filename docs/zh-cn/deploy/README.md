@@ -12,7 +12,7 @@
 你可能还需要进行以下配置：
 
 - 选择体系结构：使用 64 位的 Office 能带来更好的大数据处理性能，但可能无法兼容部分插件或者应用程序，详细信息请查看[选择 64 位或 32 位版本的 Office](https://support.microsoft.com/zh-cn/office/%E9%80%89%E6%8B%A9-64-%E4%BD%8D%E6%88%96-32-%E4%BD%8D%E7%89%88%E6%9C%AC%E7%9A%84-office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261)。
-- 选择通道：如果你需要安装 Office 2019/2021 批量许可证产品，你需要更改通道为 Office 2019/2021 企业长期版，其他时候只需要使用默认通道即可，有关通道的更多信息请查看[通道的详细信息](https://help.coolhub.top/zh-cn/deploy/configuration-options.html)。
+- 选择通道：如果你需要安装 Office 2019/2021 批量许可证产品，你需要更改通道为 Office 2019/2021 企业长期版，其他时候只需要使用默认通道即可，有关通道的更多信息请查看[通道的详细信息](https://help.coolhub.top/zh-cn/deploy/configuration-options.html#%E9%80%9A%E9%81%93)。
 
 配置完成且无报错后，即可开始部署 Office. Office 安装程序会从 Office CDN 下载所需的文件，因此网络质量可能会影响你的安装用时，但消耗的数据流量可能会更少。安装完成后，Office 安装包不会储存在本地，在安装完成时由 Office 安装程序进行清理。
 

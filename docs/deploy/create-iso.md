@@ -2,77 +2,54 @@
 
 Creating Office ISO files allows you to share Office with others, or use it for multiple installations.
 
-For a better experience, please make sure you always download the latest `with runtime` version of Office Tool Plus. Sometimes we update the Runtime folder and the RunMe.bat file, these files need to be re-downloaded manually.
+For a better experience, please make sure you always download the latest `with runtime` version of Office Tool Plus. Sometimes we update the .NET Runtime.
 
 We recommend that you update your Office ISO once a month, in line with the Office update frequency.
 
+Anyway, it's suggested to test the ISO file by yourself when finished creating.
+
 ::: tip Tip
-Using the `with runtime` version of Office Tool Plus allows you to run without the .NET Desktop Runtime installed, and also allows you to set parameters, which is very helpful for multiple installations.
+Using the `with runtime` version of Office Tool Plus allows you to run without the .NET Desktop Runtime installed, which is very helpful for multiple installations.
 :::
 
-## Download Office installation
+## Download and create Office ISO
 
-On deploy page, change deployment mode to `Download`.
+Open Office Tool Plus, on deploy page, change deployment mode to `Create ISO file`, also check `Download first, then deploy`.
 
-Add products as you want, such as Office Pro Plus 2021 - Volume.
+Add products as you want, such as Office Pro Plus 2021 - Volume License.
 
 Add languages as you want, if not, you need to connected to Internet when installing Office.
 
 Change other settings if needed.
 
+**To verify the Office installation, check "Verify Office installations files after download." on "Download settings"**.
+
 ::: tip Tip
 If you want to download Office for another version of Windows, for example, to download Office on Windows 10 for Windows 7, change *Download Settings - UA* to the corresponding system version.
 :::
 
-Click "start deploy" to download Office.
+Click "start deploy".
 
-## Create Office ISO file
+The Office ISO created using this method contains the default configuration and asks the user to start the Office installation when opening Office Tool Plus.
 
-After the download is complete, make sure that the Office installation information is loaded in the "Installation files manage" without errors.
+## Create Office ISO without configuration
 
-It's suggested to verify Office installation.
+Open Office Tool Plus, on deploy page, change deployment mode to `Download`.
 
-Change deployment mode to `create ISO file`, and choose a way to do:
+Add products as you want, such as Office Pro Plus 2021 - Volume License.
 
-::: details Create Office ISO with default configuration.
-Maintain your deploy settings. Click "start deploy", select the save location and file name for ISO file.
+Add languages as you want, if not, you need to connected to Internet when installing Office.
 
-Office Tool Plus automatically detect the installation path, you do not need to clear or change the source path property.
+Change other settings if needed.
+
+**To verify the Office installation, check "Verify Office installations files after download." on "Download settings"**.
+
+::: tip Tip
+If you want to download Office for another version of Windows, for example, to download Office on Windows 10 for Windows 7, change *Download Settings - UA* to the corresponding system version.
 :::
 
-::: details Create Office ISO without default configuration.
-Press F5 to clear all configuration, or clear all products and languages manually.
+Click "start deploy".
 
-Click "start deploy", select the save location and file name for ISO file.
-:::
+When finished downloading, press F5 to clear all configurations, also you can "refresh" on the submenu of "view XML code".
 
-::: details Create an automatically installation of Office ISO
-
-``` txt
-Note that the following features are not available in this mode：
-- Create desktop shortcuts.
-- Install iSlide after installation.
-- Use Office Tool Plus as installation module.
-
-If you need the above, please choose another way to create Office ISO file.
-```
-
-Maintain your deploy settings.
-
-Edit RunMe.bat, change the line 22:
-
-``` batch
-start "" "Office Tool Plus.exe" /loadConfig "%~dp0ConfigForISO.xml" /SourcePath "%~dp0"
-```
-
-Save RunMe.bat, back to Office Tool Plus, click "start deploy", select the save location and file name for ISO file.
-
-After creating ISO file, change RunMe.bat back or you won't be able to open Office Tool Plus again.
-
-``` batch
-start "" "Office Tool Plus.exe"
-```
-
-:::
-
-Anyway, it's suggested to test the ISO file by yourself.
+Finally change deployment mode to `Create ISO file`, then start deploy.

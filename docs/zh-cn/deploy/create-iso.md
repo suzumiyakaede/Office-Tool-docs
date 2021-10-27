@@ -28,7 +28,7 @@ Office ISO 创建完成后，我们建议您验证一下 ISO 是否和你预期�
 如果你需要为其他版本的 Windows 下载 Office，例如在 Windows 10 中下载 Office 安装包给 Windows 7 使用，请更改 *下载设置 - UA* 为对应系统版本，反之亦然。
 :::
 
-确认所有设置无误后，点击“开始部署”即可开始下载。
+确认所有设置无误后，点击“开始部署”即可。
 
 使用此方法创建的 Office ISO 包含默认配置，在 ISO 中双击打开 Office Tool Plus 时会询问用户是否开始 Office 的安装。
 
