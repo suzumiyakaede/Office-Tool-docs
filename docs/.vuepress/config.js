@@ -126,7 +126,7 @@ module.exports = {
 					],
 					'/zh-cn/deploy/': [
 						'',
-						'deploy',
+						'configuration-options',
 						'create-iso',
 						'faq'
 					],
