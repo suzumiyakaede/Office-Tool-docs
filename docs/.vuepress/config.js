@@ -76,7 +76,7 @@ module.exports = {
 					],
 					'/deploy/': [
 						'',
-						'deploy',
+						'configuration-options',
 						'create-iso',
 						'faq'
 					],
