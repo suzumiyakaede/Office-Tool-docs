@@ -8,7 +8,7 @@ If you have activated Office before, you can clear the Office activation to avoi
 
 ### Retail licenses
 
-Retail licenses can only be activated with a key. For Microsoft 365 (Office 365) product, they can only be activated by logging into a Microsoft account with a genuine license.
+Retail licenses can only be activated with a key. For Microsoft 365 (_formerly Office 365_) product, they can only be activated by logging into a Microsoft account with a genuine license.
 
 Most retail licenses are linked to a Microsoft account.
 
