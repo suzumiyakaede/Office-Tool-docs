@@ -24,7 +24,7 @@ with runtime 版本的 Office Tool Plus 允許您在沒有安裝 .NET Desktop Ru
 
 **為了確保 Office 安裝檔案的完整性，我們建議您勾選 「下載設定」 -> [下載完成後驗證 Office 安裝文件]。**
 
-::: tip 提醒
+::: tip
 如果您需要為其他版本的 Windows 下載 Office (例如在 Windows 10 中下載 Office 安裝文件供 Windows 使用)，請變更 *「下載設定」 -> [系統標示]*，以對應目標 Windows 版本。
 :::
 
@@ -44,7 +44,7 @@ with runtime 版本的 Office Tool Plus 允許您在沒有安裝 .NET Desktop Ru
 
 **為了確保 Office 安裝檔案的完整性，我們建議您勾選 「下載設定」 -> [下載完成後驗證 Office 安裝文件]。**
 
-::: tip 提醒
+::: tip
 如果您需要為其他版本的 Windows 下載 Office (例如在 Windows 10 中下載 Office 安裝文件供 Windows 使用)，請變更 *「下載設定」 -> [系統標示]*，以對應目標 Windows 版本。
 :::
 
