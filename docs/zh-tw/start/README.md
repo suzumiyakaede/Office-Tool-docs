@@ -18,9 +18,9 @@ Office Tool Plus 是基於[Office 部署工具](https://aka.ms/ODT)和 [OSPP](ht
 ## 特色功能
 
 - 建立 Office 安裝設定檔: 支援匯出到您的電腦，或是從電腦、網路位址匯入 Office Tool Plus。
-- 下載 Office: 支援所有更新頻道的 Office 和所有 Office 語言的下載。
+- 下載 Office: 支援所有更新頻道的 Office 和所有 Office 語言套件的下載。
 - 安裝 Office: 支援對已安裝的 Office 進行管理，例如新增/移除產品或應用程式。
-- 建立 Office ISO 檔: 支援預設安裝設定、安靜安裝設定。
+- 建立 Office ISO 檔案: 支援預設安裝設定、安靜安裝設定。
 - 啟用 Office: 支援線上啟用、電話啟用、KMS 啟用和更多方式。
 - 支援 Office 授權管理: 例如授權管理、金鑰管理和 KMS 管理。
 - 修改 Office 更新頻道: 支援在不重新安裝 Office 的情況下，進行升級/降級 Office。
@@ -28,19 +28,19 @@ Office Tool Plus 是基於[Office 部署工具](https://aka.ms/ODT)和 [OSPP](ht
 - 內建實用工具箱: 包括重設設定、修復範本設定、啟用問題等實用工具。
 - 轉檔 Office 文件: 基於 Office COM，穩定可靠。
 - 自訂介面主題: 打造你自己的專屬 Office Tool Plus。
-- 進階設定能夠允許您，使用更加進階的部署設定，例如 Office 的內部頻道。
+- 進階設定能夠讓您使用更加進階的部署設定，例如 Office 的內部頻道。
 
 ::: warning 注意事項
 
-1. Office 文件轉換功能，可能無法相容 64 位元的 Office 版本。我們正在嘗試解決這個問題。問題解決之前，請在 32 位位元的 Office 中使用此功能。
-2. Office Tool Plus 提供啟用管理功能，您必須擁有正版授權，才能啟用 Office。
+1. Office 文件轉換功能，可能無法相容 64 位元的 Office 版本，我們正在嘗試解決這個問題。在問題解決之前，請在 32 位元的 Office 中使用此功能。
+2. Office Tool Plus 提供啟用管理功能，但您必須擁有正版授權，才能啟用 Office。
 
 :::
 
 ::: details 關於零售版、大量授權版的互轉
-Office 的授權是可以共存的，不限於零售版或大量授權版。
+Office 授權不限於零售版或大量授權版，都可以同時存在。
 
-在零售版的基礎上再安裝大量授權版的授權，並且將其都啟用，Office 將會同時顯示零售版和大量授權版的啟用資訊。
+在零售版的基礎上再安裝大量授權版的授權，並且將其啟用，Office 將會同時顯示零售版和大量授權版的啟用資訊。
 :::
 
 ## 模組與結構
@@ -63,4 +63,4 @@ Office Tool
     └── Thunder (Thunder加速開放平臺相關文件)
 ```
 
-在正常情況下，Office Tool Plus 會自動下載缺失的模組，並自動更新至最新版本。如果某些模組丟失或無法自動下載，建議您重新下載 Office Tool Plus 以解決問題。
+在正常情況下，Office Tool Plus 會自動下載缺失的模組，並自動更新至最新版本。如果某些模組丟失或無法自動下載，建議您重新至官網下載 Office Tool Plus 以解決問題。

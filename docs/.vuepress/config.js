@@ -162,8 +162,10 @@ module.exports = {
 					{ text: '作者Blog', link: 'https://www.coolhub.top' },
 					{ text: 'Cotpear', link: 'https://www.cotpear.com?utm_source=docs-otp-web' },
 					{
-						text: '群組', items: [
-							{ text: 'Telegram', link: 'https://otp.landian.vip/grouplink/telegram.html' }
+						text: '社群', items: [
+							{ text: 'Telegram 華人群組', link: 'https://otp.landian.vip/grouplink/telegram.html' },
+							{ text: 'Telegram 台灣頻道', link: 'https://t.me/ot_channel_tw' },
+							{ text: 'OTP 台灣管理團隊', link: 'https://go.cotpear.com/otp-tw' },
 						]
 					}
 				],

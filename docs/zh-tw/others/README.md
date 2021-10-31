@@ -4,7 +4,7 @@
 
 如需儲存 Office Tool Plus 的設定，例如介面語言、主題或背景圖片設定，請勾選 [儲存個人偏好設定] 選項。
 
-進階設定中可以變更語言顯示的格式，和開啟更進階的功能。
+「進階設定」中可以變更語言顯示的格式，和開啟更進階的功能。
 
 ### 語言顯示設定
 
@@ -54,7 +54,7 @@
 
 deploy [options]
 
-使用部署指令時，您需要指定為 deploy，然後再寫參數，例如以下是一條簡單的部署命令:
+使用部署指令時，您需要指定為 deploy，然後再寫參數，例如:
 
 ``` batch
 deploy /addProduct O365ProPlusRetail
@@ -65,7 +65,7 @@ deploy /addProduct O365ProPlusRetail
 | /addProduct value | 新增產品 | value: productID_language_excludeApps_MAK。<br>其中 productID 為必要參數。<br>詳細使用方法見下方的部署範例。 |
 | /removeProduct value | 移除產品 | value: productID_language。<br>使用方式同 /addProduct |
 | /removeAll | 移除全部產品 |  |
-| /channel value | 設定通道 | value: 通道識別碼。[檢視詳細資訊](https://docs.microsoft.com/zh-tw/deployoffice/office-deployment-tool-configuration-options#channel-attribute-part-of-add-element) |
+| /channel value | 設定頻道 | value: 頻道識別碼。[檢視詳細資訊](https://docs.microsoft.com/zh-tw/deployoffice/office-deployment-tool-configuration-options#channel-attribute-part-of-add-element) |
 | /clientEdition value | 設定架構 | value: 32, 64。 |
 | /migrateArch | 變更架構 |  |
 | /version value | 設定 Office 版本編號 | value: Office 版本編號。 |
@@ -76,7 +76,7 @@ deploy /addProduct O365ProPlusRetail
 
 #### 部署 Office 範例
 
-在電腦上部署繁體中文版的 Office 專業增強版 2021 (大量授權版), 排除 Access, Outlook, OneNote:
+在電腦上部署繁體中文版的 Office 專業增強版 2021 (大量授權版)，排除 Access, Outlook, OneNote:
 
 ``` batch
 deploy /addProduct ProPlus2021Volume_zh-tw_Access,Outlook,OneNote /channel PerpetualVL2021
@@ -88,13 +88,13 @@ deploy /addProduct ProPlus2021Volume_zh-tw_Access,Outlook,OneNote /channel Perpe
 deploy /addProduct ProPlus2021Volume_zh-tw_Access,Outlook,OneNote_XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /channel PerpetualVL2021
 ```
 
-如果你需要忽略某個參數，可以將其空白。例如不設置語言 (不建議這樣做):
+如果你需要忽略某個參數，可以將其空白。例如不設定語言 (不建議這樣做):
 
 ``` batch
 deploy /addProduct ProPlus2021Volume__Access,Outlook,OneNote /channel PerpetualVL2021
 ```
 
-指定多個應用程式或語言時，您需要使用「英文逗號」將其隔開。例如  Access,Lync 或 zh-tw,en-us。
+指定多個應用程式或語言時，您需要使用「英文逗號」將其隔開。例如 Access,Lync 或 zh-tw,en-us。
 
 如果需要新增多個產品，請指定多個 addProduct 參數。
 
@@ -119,4 +119,4 @@ ospp /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /act
 | /setprt:value | 設定 KMS 連接埠，預設 1688. | /setprt:1688 |
 | /act | 啟用 Office 產品。 | /act |
 
-有關 OSPP 的更多命令請閱讀[Microsoft Docs](https://docs.microsoft.com/zh-tw/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)。
+有關 OSPP 的更多命令請參閱「[管理 Office 大量啟用的工具](https://docs.microsoft.com/zh-tw/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)」。
