@@ -12,7 +12,7 @@ Windows 7 SP1, Windows 8, Windows 10.
 
 Windows Server 2008 R2 SP1, Windows Server 2012 或者更高版本。
 
-> Mac 用户请自行处理，Office Tool Plus 不支持也不可能支持 Mac OS.
+> Office Tool Plus 不支持 macOS 或者 Linux 等操作系统。
 
 ## 针对 Windows 7 无法打开的解决方案
 

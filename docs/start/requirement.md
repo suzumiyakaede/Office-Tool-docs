@@ -12,7 +12,7 @@ Windows 7 SP1, Windows 8, Windows 10.
 
 Windows Server 2008 R2 SP1, Windows Server 2012 or higher.
 
-> Office Tool Plus doesn't support Mac OS.
+> Office Tool Plus doesn't support macOS or Linux.
 
 ### For Windows 7
 
