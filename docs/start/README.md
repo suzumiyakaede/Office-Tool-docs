@@ -57,8 +57,7 @@ Office Tool
     │   └── OSPP.VBS (Office Software Protection Platform)
     ├── clean
     │   ├── x64 (Office Activation cleaner for x64 system)
-    │   ├── x86 (Office Activation cleaner for x86 system)
-    │   └── o15-ctrremove.diagcab (Official Microsoft Office uninstaller)
+    │   └── x86 (Office Activation cleaner for x86 system)
     ├── preferences (Office applications settings related data, provided by Microsoft)
     └── Thunder (files related to Thunder download acceleration)
 ```
