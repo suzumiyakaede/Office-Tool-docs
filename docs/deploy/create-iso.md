@@ -12,7 +12,7 @@ Anyway, it's suggested to test the ISO file by yourself when finished creating.
 Using the `with runtime` version of Office Tool Plus allows you to run without the .NET Desktop Runtime installed, which is very helpful for multiple installations.
 :::
 
-## Download and create Office ISO
+## Create Office ISO with default configuration
 
 Open Office Tool Plus, on deploy page, change deployment mode to `Create ISO file`, also check `Download first, then deploy`.
 
@@ -31,6 +31,8 @@ If you want to download Office for another version of Windows, for example, to d
 Click "start deploy".
 
 The Office ISO created using this method contains the default configuration and asks the user to start the Office installation when opening Office Tool Plus.
+
+After mounted the Office ISO, you can find the "Install now" option in the context menu of the CD-ROM. This operation will start installation immediately.
 
 ## Create Office ISO without configuration
 

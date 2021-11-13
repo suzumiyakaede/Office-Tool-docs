@@ -12,7 +12,7 @@ Office ISO 创建完成后，我们建议您验证一下 ISO 是否和你预期�
 使用 with runtime 版本的 Office Tool Plus 允许你在没有安装 .NET Desktop Runtime 的情况下直接运行程序，这对大批量安装非常有帮助。
 :::
 
-## 下载 & 创建 Office ISO
+## 创建包含默认配置的 Office ISO
 
 打开 Office Tool Plus，在部署页面，切换部署模式为“创建 Office ISO”，并勾选下载后部署。
 
@@ -31,6 +31,8 @@ Office ISO 创建完成后，我们建议您验证一下 ISO 是否和你预期�
 确认所有设置无误后，点击“开始部署”即可。
 
 使用此方法创建的 Office ISO 包含默认配置，在 ISO 中双击打开 Office Tool Plus 时会询问用户是否开始 Office 的安装。
+
+挂载 Office ISO 后，如果你需要直接开始安装，您可以在 CD-ROM 的上下文菜单（右键菜单）中找到“立即安装”选项。
 
 ## 创建不含默认配置的 Office ISO
 
